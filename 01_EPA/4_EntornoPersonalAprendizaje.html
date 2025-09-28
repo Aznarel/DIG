@@ -1,0 +1,1304 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pensamiento computacional">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/01_EPA/4_EntornoPersonalAprendizaje.html">
+      
+      
+        <link rel="prev" href="3_organizacion.html">
+      
+      
+        <link rel="next" href="../02_%20Documentos/3_ProcesadorTextos.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Pensamiento computacional - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#el-entorno-personal-de-aprendizaje" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pensamiento computacional
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT1: Entorno de trabajo digital
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT1: Entorno de trabajo digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_organizacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1- Organización del entorno de trabajo digital
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.2- El entorno personal de aprendizaje
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="4_EntornoPersonalAprendizaje.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1.2- El entorno personal de aprendizaje
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#entorno-personal-de-aprendizaje-epa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entorno Personal de Aprendizaje (EPA)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entorno Personal de Aprendizaje (EPA)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-creamos-un-entorno-personal-de-aprendizaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo creamos un Entorno Personal de Aprendizaje?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Cómo creamos un Entorno Personal de Aprendizaje?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa12-introduccion-a-la-epa" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA1.2 Introducción a la EPA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-crear-un-epa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consejos para crear un EPA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-y-configurando-nuestro-epa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creando y configurando nuestro EPA
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creando y configurando nuestro EPA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa13-creando-nuestro-propio-epa" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA1.3 Creando nuestro propio EPA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: Creación de contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: Creación de contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/3_ProcesadorTextos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- El procesador de textos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_ Documentos/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 3: . Seguridad y bienestar digital 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 3: . Seguridad y bienestar digital 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: HTML I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: HTML I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT3: HTML II
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT3: HTML II
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 4: Ciudadanía digital crítica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 4: Ciudadanía digital crítica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT4: CSS I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT4: CSS I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_CSS/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- https://sites.google.com/site/migueltecnologia/4%C2%BA-eso/digitalizaci%C3%B3n/unidad-2-creaci%C3%B3n-y-gesti%C3%B3n-de-documentos/1-el-entorno-personal-de-aprendizaje?authuser=0 -->
+
+<h1 id="el-entorno-personal-de-aprendizaje"><img alt="icono" src="imagenes/iconoDoc.png" width="55" /> El entorno personal de aprendizaje<a class="headerlink" href="#el-entorno-personal-de-aprendizaje" title="Permanent link">&para;</a></h1>
+<h2 id="entorno-personal-de-aprendizaje-epa">Entorno Personal de Aprendizaje (EPA)<a class="headerlink" href="#entorno-personal-de-aprendizaje-epa" title="Permanent link">&para;</a></h2>
+<p>Siempre que necesitamos saber algo recurrimos a buscar la información en distintos sitios: Preguntamos a alguien que conoce el tema, consultamos libros o revistas, etc.</p>
+<p>Actualmente, casi la totalidad de las consultas las realizamos mediante las TIC (Tecnologías de la Informacion y la Comunicación), mediante un buscador de Internet como Google, o preguntando en foros especializados o redes sociales.</p>
+<p>Esto es debido a varios factores:</p>
+<ul>
+<li>Las TIC están ampliamente extendidas y se ha incorporado a la vida de las personas.</li>
+<li>Las respuestas buscadas son prácticamente inmediatas.</li>
+<li>La información es muy variada y con varios enfoques (Hay que saber discernir si la información es veraz).</li>
+</ul>
+<p>El Entorno Personal de Aprendizaje (<strong>EPA</strong>) o en inglés Personal Learning Environment (<strong>PLE</strong>) hace referencia al conjunto de recursos, herramientas y personas con las que aprendemos, intercambiamos y compartimos información, experiencias y conocimientos.</p>
+<p>El Entorno Personal de Aprendizaje incluye tanto el material que una persona consulta para mantenerse informado y formado, como las personas que le sirven de referencia y las conexiones entre dichas personas. </p>
+<p>Si estamos preocupados por nuestro aprendizaje futuro, tenemos que empezar a crear nuestro EPA.</p>
+<figure style="align: center;">
+    <img src="./imagenes/EPA.png">
+    <figcaption>Entorno Personal de Aprendizaje</figcaption>
+</figure>
+
+<h3 id="como-creamos-un-entorno-personal-de-aprendizaje">¿Cómo creamos un Entorno Personal de Aprendizaje?<a class="headerlink" href="#como-creamos-un-entorno-personal-de-aprendizaje" title="Permanent link">&para;</a></h3>
+<p>Un EPA es algo muy personal como su nombre indica, por lo que cada persona que crea su propio EPA podrá organizarlo y gestionarlo como más se ajuste a su manera de aprender. No obstante, si queremos que un EPA sea completo deberá contar al menos con cuatro partes:</p>
+<ol>
+<li>
+<p>Fuentes de información. Formadas por todos los sitios y actividades de los que obtenemos información. Pueden ser por ejemplo, medios online, bibliotecas digitalizadas, blogs, canales de videoscomo Youtube, navegadores web, Wikipedia, etc.</p>
+</li>
+<li>
+<p>Herramientas para modificar la información. Son todas las herramientas digitales o software que nos permiten trabajar con la información obtenida y de esta forma poder crear contenidos que nos ayuden a aprender. Son por ejemplo:</p>
+<ul>
+<li>Para crear blogs: Blogger, WordPress, Tumblr, Livejournal, Weebly, Google Sites, Wix.com.</li>
+<li>Presentaciones: Emaze, Prezi, Presentaciones de Google, Keynote, Slideshare, Genially, Canva.</li>
+<li>Edición de videos: Powtoon, InShot, Wevideo, Moovly, Animaker, Wideo, Videoscribe, OpenShot.</li>
+<li>Producción de texto: Libreoffice, Documentos de Google, Grammarly, LanguageTool, Hemingway editor.</li>
+<li>Producción oral: Audacity, Howjsay, Spell up, Lyrics training, English pronuntiation.</li>
+</ul>
+</li>
+</ol>
+<p>En este tema vamos a estudiar algunas de las más útiles.</p>
+<ol start="3">
+<li>
+<p>Red personal de aprendizaje o Personal Learning Network (PLN). Está formada por todas las personas con las que compartimos nuestro conocimiento y experiencias, colaborando en la creación de nuevos objetos de aprendizaje. Para conectarnos a ellas utilizamos las redes sociales, los foros o comunidades virtuales, los entornos colaborativos, etc.</p>
+<ul>
+<li>Herramientas de software social: redes sociales como Twitter, Facebook, Linkedin, Instagram.</li>
+<li>Herramientas para compartir información: OneDrive, Google Drive, Dropbox.</li>
+<li>Herramientas de comunicación: Skype, Google Chat, Line, Google Meet, Zoom Video, Jitsi.</li>
+</ul>
+</li>
+<li>
+<p>Escritorios virtuales. Permiten organizar toda la información recogida de forma ordenada, organizando los diferentes recursos con base en la necesidad del usuario. Aunque los EPA no están condensados en una sola plataforma, sino que están compuestos por varias herramientas, diferentes compañías han trabajado en el desarrollo de aplicativos que las integren y faciliten la experiencia a los usuarios. Algunos de ellos son:</p>
+<ul>
+<li>
+<p>SymbalooEdu: se diseñó especialmente para los entornos educativos y permite agrupar y gestionar a través de bloques, los recursos utilizados para el aprendizaje. (<a href="https://edu.symbaloo.com/mix/herramientastic436">Ejemplo de Symbaloo con herramientas TIC</a>)</p>
+</li>
+<li>
+<p>Netvibes: es un escritorio virtual que además de agrupar las widgets de uso frecuente, facilita el intercambio de información con otros usuarios.</p>
+</li>
+<li>
+<p>Pearltrees: este organizador de contenidos y enlaces, también permite guardar la información que se comparte en las redes sociales y tiene una versión que se adapta a las necesidades de los entornos educativos (Pearltrees education).</p>
+</li>
+<li>Diigo: es muy útil para administrar los enlaces de interés y compartirlos con otros estudiantes.</li>
+<li>Padlet: es una plataforma digital que permite crear murales para publicar y compartir distintos tipos de contenidos. Se pueden crear en forma individual o colaborativa, facilitando la interacción entre los usuarios.</li>
+<li>Luca: es una plataforma educativa web que ofrece aprendizajes clave y lecciones con contenido educativo oficial a través de videos de microlearning gamificado.</li>
+</ul>
+</li>
+</ol>
+<p>Por lo tanto, para crear aprendizaje en un EPA, en primer lugar la información o conocimiento llegará a la persona a través de medios como las redes sociales, por búsquedas o por su propia red. En un segundo momento, y con la información obtenida, se crearán nuevos contenidos que se compartirán en redes sociales, estrechando de esta manera los vínculos con los componentes de nuestra red de aprendizaje.</p>
+<figure style="align: center;">
+    <img src="./imagenes/epa2.png">
+    <figcaption>Ejemplos de EPA de dos personas, que muestra las apps, webs y redes sociales que lo forman</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa12-introduccion-a-la-epa">📝 <strong>AA1.2</strong> Introducción a la EPA<a class="headerlink" href="#aa12-introduccion-a-la-epa" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Organizar y gestionar el entorno personal de aprendizaje mediante la integración de recursos digitales de manera autónoma.">CE2.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>¿Porqué solemos usar las TIC para obtener información en lugar de las fuentes tradicionales?  </li>
+<li>¿En qué consiste el Entorno Personal de Aprendizaje?</li>
+<li>Nombra y explica las partes con las que debe contar un EPA.</li>
+<li>Haz una lista de las herramientas que conozcas y otra de las que no conozcas, de todas las vistas en el apartado "¿Cómo creamos un Entorno Personal de Aprendizaje?".</li>
+</ol>
+</details>
+<h3 id="consejos-para-crear-un-epa">Consejos para crear un EPA<a class="headerlink" href="#consejos-para-crear-un-epa" title="Permanent link">&para;</a></h3>
+<p>Antes de crear un EPA es conveniente que tengamos en cuenta una serie de recomendaciones:</p>
+<ul>
+<li>
+<p>Es importante crearlo poco a poco. No es cuestión de sentarnos a recopilar de golpe todas las herramientas que estén a nuestro alcance, ni de comenzar a crear perfiles en las redes que luego no podamos atender. Es importante que si no estamos formados, reforcemos nuestras competencias digitales poco a poco, utilizando y aprendiendo solo las herramientas o redes que vayamos a utilizar y que nos resulten de utilidad.</p>
+</li>
+<li>
+<p>Se encuentra siempre en constante transformación. A la vez que vamos aprendiendo hay recursos que dejamos de usar o que sustituiremos por otros más avanzados o ajustados a nuestros contenidos. También incluiremos nuevas fuentes, contactos y herramientas que vayamos descubriendo.</p>
+</li>
+<li>
+<p>Hay que compartir. Además de obtener información de nuestros contactos en las redes, es fundamental que compartamos con los demás nuestras actividades, experiencias y conocimientos. Esto se puede llevar a cabo a través de los perfiles que tengamos en redes sociales o desde nuestro propio blog. De esta manera todos aprenden, tanto los contactos de nuestra red de aprendizaje, como nosotros mismos a través de sus respuestas y comentarios.</p>
+</li>
+</ul>
+<p>Por todo lo expuesto, podemos concluir que un EPA está compuesto por tres grandes bloques que forman parte de nuestro entorno personal de aprendizaje, los cuales están relacionados con las actividades de leer, reflexionar y compartir. Los EPA son unos  facilitadores del proceso de enseñanza-aprendizaje que consiguen que podamos disfrutar del conocimiento colectivo y público. Al mismo tiempo promueven la participación al compartir y crear nuevo conocimiento.</p>
+<h3 id="creando-y-configurando-nuestro-epa">Creando y configurando nuestro EPA<a class="headerlink" href="#creando-y-configurando-nuestro-epa" title="Permanent link">&para;</a></h3>
+<p>Existen multitud de aplicaciones, páginas web, redes sociales, etc. que podrían formar parte de nuestro EPA. Para empezar podemos utilizar las aplicaciones web de Google Workspace, que son gratuitas con un correo de Google (Por ejemplo el del instituto), de acceso online y fáciles de usar. Un ejemplo de EPA sencillo, pero completo, sería el siguiente:</p>
+<ul>
+<li>
+<p>Para buscar información: Buscador de Google, Wikipedia, YouTube (A través del navegador web Google Chrome o Firefox).</p>
+</li>
+<li>
+<p>Para comunicarnos: Correo de Google, Google Meet.</p>
+</li>
+<li>
+<p>Para crear contenidos escritos: Documentos de Google, hoja de cálculo de Google.</p>
+</li>
+<li>
+<p>Para crear presentaciones: Presentaciones de Google, Google Sites, Genially, Canva.</p>
+</li>
+<li>
+<p>Para crear contenidos multimedia: Genially, Canva.</p>
+</li>
+<li>
+<p>Para guardar y compartir información: Google Drive, Google Keep.</p>
+</li>
+<li>
+<p>Para organizarnos: Calendario de Google, Contactos de Google, Symbaloo.</p>
+</li>
+</ul>
+<p>Como puedes comprobar, te suenan y has utilizado gran parte de estas herramientas. Podrás ir descubriendo y añadiendo más a lo largo de tu periodo de aprendizaje.</p>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa13-creando-nuestro-propio-epa">📝 <strong>AA1.3</strong> Creando nuestro propio EPA<a class="headerlink" href="#aa13-creando-nuestro-propio-epa" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Organizar y gestionar el entorno personal de aprendizaje mediante la integración de recursos digitales de manera autónoma.">CE2.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Enumera y explica los consejos para crear un EPA vistos en el tema.</li>
+<li>Realiza un esquema en Canva donde representes de forma gráfica el entorno personal de aprendizaje que crees que más te representa, incluyendo algunas de las herramientas vistas anteriormente.</li>
+<li>Crea tu propia EPA con <a href="https://www.symbaloo.com/home/mix/favoritos-lyny">Symbaloo</a> una aplicación o plataforma gratuita basada en la nube que permite a los usuarios organizar y categorizar enlaces web en forma de botones de opción. 
+Los enlaces pueden ser clasificados en categorías o "webmix".
+Funciona como un navegador y puede ser configurado como una página de inicio, permitiendo a los usuarios crear un escritorio virtual accesible desde cualquier dispositivo con conexión a Internet. </li>
+</ol>
+<p><div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/diL-x_zyW0M?si=S8gTddIGhNBx1ZOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></p>
+<p><div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HdUvruXXM2A?si=cECAURG04QqkiqvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></p>
+</details>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="3_organizacion.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 1.1- Organización del entorno de trabajo digital">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                1.1- Organización del entorno de trabajo digital
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02_%20Documentos/3_ProcesadorTextos.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 2.1- El procesador de textos">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                2.1- El procesador de textos
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
