@@ -1,0 +1,1649 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pensamiento computacional">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/02_%20Documentos/4_ProcesadorTextos2.html">
+      
+      
+        <link rel="prev" href="3_ProcesadorTextos.html">
+      
+      
+        <link rel="next" href="5_ProcesadorTextos3.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Pensamiento computacional - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#el-procesador-de-textos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pensamiento computacional
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT1: Entorno de trabajo digital
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT1: Entorno de trabajo digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/3_organizacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1- Organización del entorno de trabajo digital
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/4_EntornoPersonalAprendizaje.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2- El entorno personal de aprendizaje
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: Procesadores de texto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: Procesadores de texto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_ProcesadorTextos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Introducción a la ofimática
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.2- Operaciones básicas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="4_ProcesadorTextos2.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operaciones-basicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operaciones básicas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operaciones básicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#abrir-un-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abrir un documento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cerrar-un-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cerrar un documento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nuevo-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuevo documento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guardar-un-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guardar un documento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insertar-caracteres-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insertar caracteres especiales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Insertar caracteres especiales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa22-manejo-caracteres-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.2 Manejo caracteres especiales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa23-manejo-de-caracteres-especiales-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.3 Manejo de caracteres especiales II
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exportar-a-pdf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exportar a PDF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-y-rehacer-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deshacer y rehacer cambios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-y-reemplazar-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buscar y reemplazar texto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buscar y reemplazar texto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa24-manejo-caracteres-especiales-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.4 Manejo caracteres especiales II
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seleccionar-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seleccionar texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cortar-copiar-y-pegar-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cortar, copiar y pegar texto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cortar, copiar y pegar texto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa25-copiar-y-pegar" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.5 Copiar y pegar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa26-copiar-y-pegar-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.6 Copiar y pegar II
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_ProcesadorTextos3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3- Estilos de páginas, textos y párrafos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_ProcesadorTextos4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4- Corrección ortográfica, imágenes y tablas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_ProcesadorTextos5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5- Índices, portadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_ Documentos/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 3: . Seguridad y bienestar digital 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 3: . Seguridad y bienestar digital 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: HTML I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: HTML I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT3: HTML II
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT3: HTML II
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 4: Ciudadanía digital crítica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 4: Ciudadanía digital crítica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT4: CSS I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT4: CSS I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_CSS/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- fuente: https://picuino.github.io/es/writer-index.html
+https://picuino.github.io/es/informatica-writer-index.html
+-->
+
+<h1 id="el-procesador-de-textos"><img alt="icono" src="imagenes/iconoWord.png" width="55" /> El procesador de textos<a class="headerlink" href="#el-procesador-de-textos" title="Permanent link">&para;</a></h1>
+<h2 id="operaciones-basicas">Operaciones básicas<a class="headerlink" href="#operaciones-basicas" title="Permanent link">&para;</a></h2>
+<p>Las operaciones básicas que podemos realizar con <em>Writer</em> son:</p>
+<h3 id="abrir-un-documento">Abrir un documento<a class="headerlink" href="#abrir-un-documento" title="Permanent link">&para;</a></h3>
+<p>Para abrir un documento ya existente hay varias maneras.
+Lo más sencillo es ir a Archivo &gt; Abrir en el menú y buscar el documento en la ubicación guardada.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer8.png">
+    <figcaption>Abrir un documento</figcaption>
+</figure>
+
+<h3 id="cerrar-un-documento">Cerrar un documento<a class="headerlink" href="#cerrar-un-documento" title="Permanent link">&para;</a></h3>
+<p>Si solo hay un documento abierto y deseamos cerrarlo, debemos ir a Archivo &gt; Cerrar en el menú o hacer clic en la X en la barra de título. En Windows y Linux, cuando cierre el último documento, LibreOffice se cerrará por completo.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer9.png">
+    <figcaption>Cerrar un documento</figcaption>
+</figure>
+
+<h3 id="nuevo-documento">Nuevo documento<a class="headerlink" href="#nuevo-documento" title="Permanent link">&para;</a></h3>
+<p>Si deseamos crear un nuevo documento, debemos ir a  Archivo &gt; Nuevo &gt; Documento de texto en el menú o hacer  clic en el icono <strong>Nuevo</strong> de la barra de herramientas <em>Estándar</em>.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer10.png">
+    <figcaption>Nuevo un documento</figcaption>
+</figure>
+
+<h3 id="guardar-un-documento">Guardar un documento<a class="headerlink" href="#guardar-un-documento" title="Permanent link">&para;</a></h3>
+<p>Podemos guardar un documento usamos <em>Guardar como</em> que guarda el documento con el nombre indicado y en la ubicación especificada.
+<img alt="alt text" src="image.png" /></p>
+<figure style="align: center;">
+    <img src="./imagenes/writer5.png">
+    <figcaption>Guardar un documento</figcaption>
+</figure>
+
+<p>También se puede usar el icono de la barra del menú.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer6.png">
+    <figcaption>Guardar un documento desde icono</figcaption>
+</figure>
+
+<p>Observamos que tras guardar el documento el <em>título</em> cambia de </p>
+<figure style="align: center;">
+    <img src="./imagenes/writer7.png">
+    <figcaption>Título renombrado tras guardar</figcaption>
+</figure>
+
+<h3 id="insertar-caracteres-especiales">Insertar caracteres especiales<a class="headerlink" href="#insertar-caracteres-especiales" title="Permanent link">&para;</a></h3>
+<p>Los caracteres especiales son caracteres extendidos incluidos en los tipos de letra y que normalmente no se encuentran en el teclado, por ejemplo, © ¾ æ ç Ł ö ø ¢</p>
+<p>Para insertar uno o más caracteres especiales, coloca el cursor en la posición donde deseas que aparezcan los caracteres. </p>
+<p>Haz clic en el icono de <em>Caracteres especiales</em> en la barra de herramientas <em>Estánda</em></p>
+<figure style="align: center;">
+    <img src="./imagenes/writer15.png">
+    <figcaption>Caracteres especiales (barra de herramientas Estándar)</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa22-manejo-caracteres-especiales">📝 <strong>AA2.2</strong> Manejo caracteres especiales<a class="headerlink" href="#aa22-manejo-caracteres-especiales" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abre LibreOffice Writer y escribe el siguiente texto</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer16.png">
+    <figcaption>Texto ejercicio</figcaption>
+</figure></p>
+<ol start="2">
+<li><strong>Guarda</strong> el documento <em>como</em> "AA2.2.<strong>odt</strong>"</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Acentos y caracteres especiales</p>
+<p><strong>ACENTOS</strong>: Para escribir un acento es necesario pulsar primero la tecla de acento <img alt="alt text" src="imagenes/writer17.png" />y después pulsar la vocal que queremos escribir.</p>
+<p><strong>CARACTERES ESPECIALES</strong>: Para escribir los caracteres que se encuentran encima de los números es necesario mantener presionada la tecla shift <img alt="alt text" src="imagenes/writer18.png" /> y después pulsar la tecla de número <img alt="alt text" src="imagenes/writer19.png" />.
+Para escribir los caracteres que se encuentran a la derecha de los números es necesario mantener presionada la tecla Alt Gr <img alt="alt text" src="imagenes/writer20.png" /> y después pulsar la tecla de número <img alt="alt text" src="imagenes/writer19.png" />.</p>
+</div>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa23-manejo-de-caracteres-especiales-ii">📝 <strong>AA2.3</strong> Manejo de caracteres especiales II<a class="headerlink" href="#aa23-manejo-de-caracteres-especiales-ii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abre LibreOffice Writer y escribe el siguiente texto:</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer22.png">
+    <figcaption>Texto ejercicio</figcaption>
+</figure></p>
+<ol start="2">
+<li><strong>Guarda</strong> el documento <strong>como</strong> "AA2.4.<strong>pdf</strong>"</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Caracteres especiales y mayúsculas</p>
+<p><strong>CARACTERES ESPECIALES</strong>: Para escribir los caracteres que se encuentran encima de los números es necesario mantener presionada la tecla shift <img alt="alt text" src="imagenes/writer18.png" /> y después pulsar la tecla de número <img alt="alt text" src="imagenes/writer19.png" />.
+Para escribir los caracteres que se encuentran a la derecha de los números es necesario mantener presionada la tecla Alt Gr <img alt="alt text" src="imagenes/writer20.png" /> y después pulsar la tecla de número <img alt="alt text" src="imagenes/writer19.png" />.</p>
+<p><strong>MAYÚSCULAS</strong>: Para escribir mucho texto en mayúsculas se utiliza la tecla de bloqueo de mayúsculas <img alt="alt text" src="imagenes/writer23.png" />. Al pulsar la tecla, el teclado escribe todo en mayúsculas. Al volver a pulsar la tecla el teclado escribe todo en minúsculas. Para escribir una sola letra en mayúsculas se utiliza la tecla de mayúsculas o también llamada tecla de shift <img alt="alt text" src="imagenes/writer18.png" />.
+Si el teclado está en modo de mayúsculas, al pulsar la tecla shift escribirá en minúsculas.</p>
+<p><strong>DIÉRESIS</strong>: Para escribir una diéresis (ü) hay que mantener presionada la tecla <img alt="alt text" src="imagenes/writer18.png" /> mientras se pulsa la tecla de diéresis <img alt="tecla-dieresis" src="imagenes/writer17.png" />.
+A continuación se presiona la tecla U y saldrá en la pantalla la letra con diéresis ü.</p>
+</div>
+</details>
+<h3 id="exportar-a-pdf">Exportar a PDF<a class="headerlink" href="#exportar-a-pdf" title="Permanent link">&para;</a></h3>
+<p>Podemos guardar el documento en otros formatos como PDF mediante la opción del menú.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer24.png">
+    <figcaption>Exportar a PDF</figcaption>
+</figure>
+
+<h3 id="deshacer-y-rehacer-cambios">Deshacer y rehacer cambios<a class="headerlink" href="#deshacer-y-rehacer-cambios" title="Permanent link">&para;</a></h3>
+<p>Para deshacer el cambio más reciente en un documento, pulsa Ctrl+Z, o elije Edición &gt; Deshacer en el menú o haz clic en el icono <em>Deshacer</em> en la barra de herramientas <em>Estándar</em>. </p>
+<p>Para obtener una lista de todos los cambios que se pueden deshacer, haz clic en el pequeño triángulo situado a la derecha del icono <em>Deshacer</em> de la barra de herramientas <em>Estándar</em>. Podremos seleccionar varios cambios secuenciales en la lista y deshacerlos al mismo tiempo.</p>
+<p>Después de deshacer los cambios, se activa la función de <em>Rehacer</em> se activa. Para restaurar un cambio deshecho seleccionamos Edición &gt; Rehacer o pulsamos Ctrl+Y o hacemos clic en el icono <em>Rehacer</em> en la barra de herramientas <em>Estándar</em>. Al igual que con Deshacer, haz clic en el pequeño triángulo hacia abajo para obtener una lista de los cambios que se pueden restaurar.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer11.png">
+    <figcaption>Lista de acciones que deshacer</figcaption>
+</figure>
+
+<h3 id="buscar-y-reemplazar-texto">Buscar y reemplazar texto<a class="headerlink" href="#buscar-y-reemplazar-texto" title="Permanent link">&para;</a></h3>
+<p>Writer te da la opción de encontrar texto dentro de un documento.</p>
+<p>Ve a Editar &gt; Buscar y Reemplazar en la barra de menú o haz clic en el botón Buscar y reemplazar en la barra de herramientas Buscar.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer14.png">
+    <figcaption>Diálogo Buscar y reemplazar</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa24-manejo-caracteres-especiales-ii">📝 <strong>AA2.4</strong> Manejo caracteres especiales II<a class="headerlink" href="#aa24-manejo-caracteres-especiales-ii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abre LibreOffice Writer y escribe el siguiente texto:</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer21.png">
+    <figcaption>Texto ejercicio</figcaption>
+</figure></p>
+<ol start="2">
+<li>Reemplaza la palabra <em>punto</em> por <em>cambio</em> usando el diálogo de Buscar y Reemplazar. <strong>Adjunta captura de pantalla del proceso.</strong></li>
+<li>Cambia el factor de escala en la parte inferior derecha de la ventana, a 160% pulsando el botón - o el botón +.<strong>Adjunta captura de pantalla del proceso.</strong></li>
+<li>Selecciona el último párrafo.<strong>Adjunta captura de pantalla del proceso.</strong></li>
+<li><strong>Guarda</strong> el documento <strong>como</strong> "AA2.3.<strong>docx</strong>"</li>
+</ol>
+</details>
+<h3 id="seleccionar-texto">Seleccionar texto<a class="headerlink" href="#seleccionar-texto" title="Permanent link">&para;</a></h3>
+<p>Seleccionar texto en Writer es similar a seleccionar texto en otras aplicaciones. Puedes deslizar el cursor del ratón sobre el texto o usar varios clics para seleccionar una palabra (doble clic), oración (triple clic) o párrafo (cuádruple clic)</p>
+<p>Para seleccionar elementos no consecutivos:
+1. Selecciona el primer fragmento de texto. 
+2. Pulsa <em>Mayús+F8</em> para habilitar el modo de Selección de añadido.
+3. Usa las teclas de flecha para moverte al comienzo del siguiente fragmento de texto que se seleccionará. 
+4. Manten pulsada la tecla <em>Mayús</em> y seleccione el siguiente fragmento de texto.
+5. Repite tantas veces como sea necesario.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer12.png">
+    <figcaption>Selección de fragmentos de texto no consecutivos</figcaption>
+</figure>
+
+<h3 id="cortar-copiar-y-pegar-texto">Cortar, copiar y pegar texto<a class="headerlink" href="#cortar-copiar-y-pegar-texto" title="Permanent link">&para;</a></h3>
+<p>Cortar y copiar texto en Writer es similar a cortar y copiar texto en otras aplicaciones. 
+Puedes copiar o mover texto dentro de un documento o entre documentos, arrastrándolo o usando las entradas del menú, íconos o atajos de teclado para selecciones. 
+También puedes copiar texto de otras fuentes, como páginas web y pegarlo en un documento de Writer.</p>
+<ul>
+<li>Para mover (arrastrar y soltar) el texto seleccionado con el ratón, arrástralo a la nueva ubicación y suéltalo; el cursor cambia de forma mientras se arrastra.</li>
+<li>Para copiar el texto seleccionado, manten pulsada la tecla <em>Ctrl</em> mientras arrastras. El texto conservará el formato que tenga en su origen.</li>
+<li>Para mover (cortar y pegar) el texto seleccionado, usa <strong>Ctrl+X</strong> para cortar el texto, inserta el cursor en el punto de pegado y usa <strong>Ctrl+V</strong> para pegar. Alternativamente, utiliza los botones <em>Copiar/Pegar</em> de la barra de herramientas estándar o las opciones del menú Editar.</li>
+<li>Cuando pegas texto, el resultado depende del tipo de letra del texto y de cómo lo pegas. Si haces clic en el botón <strong>Pegar</strong>, de la barra de herramientas Estándar, el texto pegado conservará su formato original (como negrita o cursiva). El texto pegado desde sitios web u otras fuentes puede contener marcos o tablas como parte del formato original. </li>
+</ul>
+<p>Para eliminar el formato original y que el texto pegado tenga el mismo formato que el párrafo del punto de inserción, usa el menú <strong>Editar &gt; Pegado especial</strong>.</p>
+<figure style="align: center;">
+    <img src="./imagenes/writer13.png">
+    <figcaption>Menú de Pegado especial</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa25-copiar-y-pegar">📝 <strong>AA2.5</strong> Copiar y pegar<a class="headerlink" href="#aa25-copiar-y-pegar" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Ordenar alfabéticamente todos los nombres de la lista cortando cada uno de los nombres en orden alfabético y pegándolos al inicio de la lista.</p>
+<ul>
+<li>Diana</li>
+<li>Yolanda</li>
+<li>Nicolás</li>
+<li>Carlos</li>
+<li>Marta</li>
+<li>Álvaro</li>
+<li>Francisco</li>
+<li>Irene</li>
+<li>Javier</li>
+<li>Lorenzo</li>
+<li>Gabriela</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Copiar y pegar</p>
+<p>Empezamos por seleccionar el nombre <strong>Álvaro</strong> y lo cortamos manteniendo pulsada la tecla control <img alt="tecla-control" src="imagenes/writer25.png" /> y pulsando a continuación la tecla X <img alt="tecla-x" src="imagenes/writer26.png" />.</p>
+<p>También podemos seleccionar el nombre y pulsar el botón cortar <img alt="button-cortar" src="imagenes/writer27.png" /> en la barra de herramientas.</p>
+<p>Otra forma de conseguir cortar es seleccionar el nombre y pinchar en el menú Editar... Cortar</p>
+<p>Ahora colocamos el cursor al comienzo de la lista creamos una nueva línea presionando la tecla Return y pegamos el nombre que acabamos de cortar.</p>
+<p>Para pegar el texto debemos mantener pulsada la tecla control <img alt="tecla-control" src="imagenes/writer25.png" /> y pulsar a continuación la tecla V <img alt="tecla-v" src="imagenes/writer28.png" />.</p>
+<p>También podemos pegar la palabra pinchando en el botón pegar <img alt="button-pegar" src="imagenes/writer29.png" />.</p>
+<p>Otra forma de pegar el nombre es pinchar en el menú Editar... Pegar</p>
+<p>Debemos pulsar la tecla Return <img alt="tecla-return" src="imagenes/writer30.png" /> para separar las líneas de texto y crear una nueva línea.</p>
+<p>El resultado será el siguiente.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer31.png">
+</figure></p>
+<p>Si en algún momento nos equivocamos y queremos deshacer alguna acción que hemos hecho mal se puede conseguir con el botón <img alt="button-deshacer-accion" src="imagenes/writer32.png" /> de la barra de herramientas.</p>
+<p>Para volver atrás también se puede mantener presionada la tecla control <a href="imagenes/writer25.png">tecla-control</a> y pulsar la tecla Z <a href="imagenes/writer33.png">tecla-z</a>.</p>
+<p>Para volver a rehacer la acción podemos pulsar el botón <a href="imagenes/writer34.png">button-rehacer-accion</a> de la barra de herramientas.</p>
+<p>También podemos rehacer la acción manteniendo pulsada la tecla control <a href="imagenes/writer25.png">tecla-control</a> y pulsando la tecla Y <a href="imagenes/writer35.png">tecla-4</a>.</p>
+<p>Continúa cortando y pegando nombres hasta que la lista esté ordenada alfabéticamente.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer36.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</div>
+</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa26-copiar-y-pegar-ii">📝 <strong>AA2.6</strong> Copiar y pegar II<a class="headerlink" href="#aa26-copiar-y-pegar-ii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abrimos un nuevo documento de texto en Writer.</li>
+<li>Buscamos información en Wikipedia sobre algún inventor, por ejemplo, Nikola Tesla.</li>
+<li>
+<p>Seleccionamos el primer párrafo de texto de Wikipedia y lo copiamos manteniendo pulsada la tecla control <img alt="tecla-control" src="imagenes/writer25.png" /> y pulsando a continuación la tecla C <img alt="tecla-c" src="imagenes/writer37.png" /></p>
+<ul>
+<li>
+<p>Otra forma de copiar es seleccionar el texto, pinchar con el botón derecho del ratón y seleccionar copiar.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer38.png">
+    <figcaption>Copiar mediante el ratón</figcaption>
+</figure></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Una vez copiado el texto, volvemos a Writer y pegamos el texto manteniendo pulsada la tecla control <img alt="tecla-control" src="imagenes/writer25.png" /> y pulsando la tecla V <img alt="tecla-v" src="imagenes/writer28.png" />.</p>
+<ul>
+<li>Otra forma de pegar el texto es pinchar con el botón derecho del ratón y seleccionar pegar.</li>
+</ul>
+</li>
+<li>
+<p>Una vez pegado, veremos que el texto aparece con enlaces a otras páginas web. Los enlaces se verán en color azul subrayado.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer39.png">
+    <figcaption>Texto pegado con formato y links</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Para que no aparezcan los enlaces es necesario pegar el texto sin formato. Primero vamos a deshacer el pegado anterior con el botón deshacer <img alt="button-deshacer-accion" src="imagenes/writer32.png" /> o con la combinación de teclas control <img alt="tecla-control" src="imagenes/writer25.png" /> y la tecla Z <img alt="tecla-z" src="imagenes/writer33.png" />.</p>
+</li>
+<li>
+<p>Ahora seleccionamos en el menú Editar... Pegado especial... Pegar texto sin formato</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer40.png">
+    <figcaption>Pegado especial</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Por último vamos a copiar la imagen de Tesla de la Wikipedia. </p>
+<ul>
+<li>Primero pinchamos con el botón derecho del ratón sobre la imagen y seleccionamos Copiar imagen. </li>
+<li>A continuación pinchamos en el comienzo del texto en Writer y pegamos la imagen con el botón derecho del ratón o pulsando la combinación de teclas control <img alt="tecla-control" src="imagenes/writer25.png" /> y pulsar a continuación la tecla V <img alt="tecla-v" src="imagenes/writer28.png" />.</li>
+<li>El resultado será el siguiente.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer41.png">
+    <figcaption>Resultado ejercicio</figcaption>
+</figure></p>
+<p>🎬 Vídeo con la <a href="https://picuino.github.io/_static/tutorial-writer/writer/cas/pract/p03c.htm">realización del ejercicio</a></p>
+</li>
+</ol>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guia <a href="resources/Guia-Writer-7.3.pdf">LibreOffice Writer 7.3</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="3_ProcesadorTextos.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 2.1- Introducción a la ofimática">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                2.1- Introducción a la ofimática
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="5_ProcesadorTextos3.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 2.3- Estilos de páginas, textos y párrafos">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                2.3- Estilos de páginas, textos y párrafos
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

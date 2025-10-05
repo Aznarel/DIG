@@ -1,0 +1,1648 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Pensamiento computacional">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/02_%20Documentos/6_ProcesadorTextos4.html">
+      
+      
+        <link rel="prev" href="5_ProcesadorTextos3.html">
+      
+      
+        <link rel="next" href="7_ProcesadorTextos5.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Pensamiento computacional - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#el-procesador-de-textos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pensamiento computacional
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT1: Entorno de trabajo digital
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT1: Entorno de trabajo digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/3_organizacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1- Organización del entorno de trabajo digital
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/4_EntornoPersonalAprendizaje.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2- El entorno personal de aprendizaje
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: Procesadores de texto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: Procesadores de texto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_ProcesadorTextos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Introducción a la ofimática
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_ProcesadorTextos2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_ProcesadorTextos3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3- Estilos de páginas, textos y párrafos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.4- Corrección ortográfica, imágenes y tablas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="6_ProcesadorTextos4.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.4- Corrección ortográfica, imágenes y tablas
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#correccion-ortografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corrección ortográfica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Corrección ortográfica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa214-correccion-ortografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.14 Corrección ortográfica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imagenes-en-el-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imágenes en el documento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Imágenes en el documento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa215-imagenes-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.15 Imágenes I
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa216-imagenes-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.16 Imágenes II
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa217-imagenes-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.17 Imágenes III
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tablas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tablas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa218-tablas" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA2.18 Tablas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_ProcesadorTextos5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5- Índices, portadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Dispositivos digitales, sistemas operativos y de comunicación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_ Documentos/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 3: . Seguridad y bienestar digital 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 3: . Seguridad y bienestar digital 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT2: HTML I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT2: HTML I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT3: HTML II
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            UT3: HTML II
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_HTML/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 4: Ciudadanía digital crítica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 4: Ciudadanía digital crítica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UT4: CSS I
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            UT4: CSS I
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_CSS/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- fuente: https://picuino.github.io/es/writer-index.html
+https://picuino.github.io/es/informatica-writer-index.html
+-->
+
+<h1 id="el-procesador-de-textos"><img alt="icono" src="imagenes/iconoWord.png" width="55" /> El procesador de textos<a class="headerlink" href="#el-procesador-de-textos" title="Permanent link">&para;</a></h1>
+<h2 id="correccion-ortografica">Corrección ortográfica<a class="headerlink" href="#correccion-ortografica" title="Permanent link">&para;</a></h2>
+<p>La corrección ortográfica es una herramienta fundamental para garantizar la calidad del texto. Permite detectar y corregir errores de escritura, gramática o puntuación de forma automática o manual. Tanto en Word como en Writer, el corrector subraya las palabras que podrían estar mal escritas y ofrece sugerencias para mejorar el texto, ayudando a mantener una redacción clara y profesional.</p>
+<p>En <strong>Word</strong>, estas opciones se encuentran en la pestaña Revisar → Ortografía y gramática. En <strong>Writer</strong>, se accede desde el menú Herramientas → Ortografía o con el atajo F7.</p>
+<ul>
+<li>
+<p><strong>Idioma del texto</strong>: El idioma para revisar la ortografía se selecciona desde una <strong>lista desplegable</strong>.</p>
+</li>
+<li>
+<p>Las palabras desconocidas se <strong>resaltan</strong>.</p>
+</li>
+<li>
+<p>Los errores gramaticales se indican con una <strong>barra de color claro</strong>.</p>
+</li>
+<li>
+<p><strong>Sugerencias</strong>: Contiene posibles reemplazos para la palabra resaltada.</p>
+<ul>
+<li><strong>Corregir</strong> → cambiar solo esa palabra.</li>
+<li><strong>Corregir todo</strong> → cambiar todas las veces que aparece esa palabra.</li>
+<li><strong>Ignorar una vez</strong> → pasa por alto ese error una sola vez.</li>
+<li><strong>Ignorar todo</strong> → pasa por alto ese error en todo el documento.</li>
+<li><strong>Añadir al diccionario</strong> → añade la palabra como correcta para futuras revisiones.</li>
+<li><strong>Ignorar regla</strong> → no aplicar una regla gramatical específica.</li>
+<li><strong>Corregir</strong> Reemplaza la palabra desconocida o la oración con la propuesta.</li>
+<li><strong>Corregir todo</strong> Sustituye todas las apariciones de esa palabra.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deshacer</strong>: Revierte el último cambio realizado.</p>
+</li>
+</ul>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa214-correccion-ortografica">📝 <strong>AA2.14</strong> Corrección ortográfica<a class="headerlink" href="#aa214-correccion-ortografica" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Descarga el siguiente <a href="resources/writer-ortografia.odt">documento writer-ortografia.odt</a>. </li>
+<li>
+<p>En el texto podemos ver muchas faltas de ortografía señaladas con líneas de subrayado rojo debajo de cada palabra incorrecta. También hay palabras que están escritas de forma correcta, pero en otro idioma, por lo que se señalan en rojo (Marie, Passy, Zarato, Henri) al no encontrarse en el diccionario español. Para poder ver las palabras incorrectas con el subrayado rojo debajo de cada una, es necesario activar la opción que se encuentra en el menú Herramientas... Revisión ortográfica automática. 
+3.Para corregir las faltas de forma automática vamos a utilizar la herramienta del menú Herramientas... Ortografía... o bien pulsando la tecla de función F7. Aparecerá una ventana de control de ortografía. En las palabras de nombres propios como Marie pulsaremos el botón de <strong>Ignorar todo</strong>.
+<figure style="align: center;">
+        <img src="./imagenes/writer89.png">
+    </figure></p>
+</li>
+<li>
+<p>En las palabras mal escritas, como <strong>zientífica</strong> debemos pulsar en una de las sugerencias que se muestran debajo (en este caso será <strong>científica</strong>) y pulsaremos el botón de <strong>Corregir todo</strong>.
+<figure style="align: center;">
+        <img src="./imagenes/writer90.png">
+    </figure></p>
+</li>
+<li>En las palabras que sabemos que están bien escritas también podemos añadirlas al diccionario para que el corrector las interprete como palabras correctas.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer91.png">
+    </figure></p>
+<ol start="6">
+<li>En la última palabra mal escrita (<strong>orijen</strong>) aparece una primera sugerencia que no es correcta (orinen). Habrá que señalar la sugerencia correcta (<strong>origen</strong>) y pulsar en <strong>Corregir todo</strong>.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer92.png">
+    </figure></p>
+<ol start="7">
+<li>Una vez corregidas todas las faltas de ortografía, el texto podrá verse sin líneas de subrayado rojo en las faltas de ortografía</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer93.png">
+        <figcaption>Resultado final</figcaption>
+    </figure></p>
+</details>
+<h2 id="imagenes-en-el-documento">Imágenes en el documento<a class="headerlink" href="#imagenes-en-el-documento" title="Permanent link">&para;</a></h2>
+<p>Las imágenes enriquecen el contenido visual del documento y facilitan la comprensión de la información. En Word y Writer se pueden insertar desde archivos, la web o el portapapeles, y luego ajustar su tamaño, posición o estilo. Además, es posible aplicar efectos, bordes o alineaciones para integrarlas correctamente con el texto y mejorar la presentación general del trabajo.</p>
+<p>En <strong>Word</strong>, estas opciones se encuentran en la pestaña Insertar → Imágenes. En <strong>Writer</strong>, se accede desde Insertar → Imagen → Desde archivo….</p>
+<ul>
+<li><strong>Insertar imagen</strong> En Word: <strong>Insertar → Imágenes</strong>. En Writer: <strong>Insertar → Imagen → Desde archivo…</strong>.</li>
+<li><strong>Cambiar tamaño</strong>  Ajustar ancho y alto arrastrando las esquinas. Mantener proporciones para evitar deformar la imagen.</li>
+<li><strong>Ajustar posición</strong>  Posicionar la imagen respecto al texto: en línea con el texto,  ajuste de texto automático, posición libre.</li>
+<li><strong>Alineación</strong> Izquierda, derecha, centrada o justificada.</li>
+<li><strong>Estilos y bordes</strong> Aplicar bordes, sombras o efectos predefinidos.</li>
+<li><strong>Recortar</strong> Eliminar partes no deseadas de la imagen.</li>
+<li><strong>Efectos y formatos</strong> Brillo, contraste, filtros o transparencia.</li>
+<li><strong>Opciones avanzadas</strong> Ajustar propiedades como enlace, texto alternativo, título y descripción.</li>
+</ul>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa215-imagenes-i">📝 <strong>AA2.15</strong> Imágenes I<a class="headerlink" href="#aa215-imagenes-i" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Descarga el siguiente <a href="resources/writer-imagen-1.odt">documento writer-imagen-1.odt</a>.</li>
+<li>Descarga las imágenes de <a href="resources/steve-jobs.jpg">Steve Jobs</a>.</li>
+<li>A continuación colocamos el cursor en el comienzo del primer párrafo e insertamos la imagen con el menú Insertar... Imagen... y seleccionamos la imagen de Steve Jobs desde el directorio de descargas.</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer94.png">
+    <figcaption>Insertar imagen</figcaption>
+</figure>.</p>
+<ol start="4">
+<li>Continuamos dando formato a la imagen. Una vez seleccionada la imagen elegimos en el menú Formato... Imagen... Propiedades... o bien con el botón derecho del ratón sobre la imagen elegimos Propiedades. Ahora en la pestaña de <strong>Tipo</strong> cambiamos las siguientes propiedades y pulsamos en <strong>Aceptar</strong>.</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer95.png">
+    <figcaption>Pestaña Tipo</figcaption>
+</figure>.</p>
+<ol start="5">
+<li>
+<p>El tamaño de la imagen cambiará, así como su posición.
+<figure style="align: center;">
+    <img src="./imagenes/writer96.png">
+    <figcaption>REsultado parcial/figcaption&gt;
+</figure>.</p>
+</li>
+<li>
+<p>En este momento podemos ver que el texto está pegado a la imagen, por lo que debemos añadir un margen para que se vea con más claridad.Volvemos a seleccionar el menú Formato... Imagen... Propiedades... o bien con el botón derecho del ratón sobre la imagen elegimos Propiedades. Ahora en la pestaña de <strong>Ajustar</strong> cambiamos las siguientes propiedades y pulsamos en <strong>Aceptar</strong>.
+<figure style="align: center;">
+    <img src="./imagenes/writer97.png">
+    <figcaption>Pestaña Ajustes</figcaption>
+</figure>.</p>
+</li>
+<li>
+<p>Con esto hemos añadido márgenes a la izquierda y debajo de la imagen con lo que se puede ver mejor el texto alrededor.
+<figure style="align: center;">
+    <img src="./imagenes/writer98.png">
+    <figcaption>Resultado</figcaption>
+</figure>.</p>
+</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa216-imagenes-ii">📝 <strong>AA2.16</strong> Imágenes II<a class="headerlink" href="#aa216-imagenes-ii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abrimos un documento en blanco. </li>
+<li>Descarga las imágenes de <a href="resources/arduino.jpg">Arduino</a>.</li>
+<li>A continuación insertamos la imagen de la placa Arduino en el documento con el menú Insertar... Imagen.... Una vez insertada, <strong>cambiamos el tamaño de la imagen a 40mm de ancho</strong>. Seleccionamos la imagen y escogemos el menú Formato... Imagen... Propiedades... o bien con el botón derecho del ratón sobre la imagen escogemos Propiedades.... Ahora en la pestaña <strong>Tipo</strong> cambiamos la anchura de la foto a 40mm manteniendo las proporciones, como muestra la siguiente imagen.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer99.png">
+        <figcaption>Menú Tipo</figcaption>
+</figure></p>
+<ol start="4">
+<li>Ahora cambiamos la posición de la imagen a la izquierda con el botón de alinear imagen <img alt="button-alinear-imagen" src="imagenes/writer100.png" />. El resultado será el siguiente.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer101.png">
+        <figcaption>Resultado parcial</figcaption>
+</figure></p>
+<ol start="4">
+<li>Para continuar insertaremos otra vez la imagen de la placa Arduino, cambiaremos su tamaño a 40mm de ancho y la alinearemos a la derecha.Ahora cambiaremos la orientación de la imagen con el botón de reflejar horizontalmente <img alt="button-reflejar" src="imagenes/writer102.png" />. El resultado será el siguiente.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer103.png">
+        <figcaption>Resultado parcial</figcaption>
+</figure></p>
+<ol start="5">
+<li>A continuación insertaremos de nuevo la imagen de la placa Arduino y la recortaremos con el botón de recortar imagen <img alt="button-recortar-imagen" src="imagenes/writer104.png" />para que se vea solo el microcontrolador de la placa.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer105.png">
+        <figcaption>Resultado parcial</figcaption>
+</figure></p>
+<ol start="6">
+<li>
+<p>A continuación pinchamos en el texto para deseleccionar la imagen y volvemos a seleccionarla para poder aumentar el tamaño de la imagen con los botones que se encuentran en las esquinas.Después centramos la imagen con el botón de alinear imagen <img alt="button-alinear-imagen" src="imagenes/writer100.png" /> y centrar imagen <img alt="button-centrar-imagen" src="imagenes/writer106.png" /> .Ahora giramos dos veces la imagen con la herramienta girar imagen <img alt="button-girar-imagen" src="imagenes/writer107.png" /> para que se pueda leer el texto de la imagen al derecho.El resultado será el siguiente.
+<figure style="align: center;">
+        <img src="./imagenes/writer108.png">
+        <figcaption>Resultado parcial</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Por último haremos lo mismo que en el apartado anterior con los condensadores de la placa, con el siguiente resultado.</p>
+</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer109.png">
+        <figcaption>Resultado final</figcaption>
+</figure></p>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa217-imagenes-iii">📝 <strong>AA2.17</strong> Imágenes III<a class="headerlink" href="#aa217-imagenes-iii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abrimos un documento en blanco. </li>
+<li>Descarga las imágenes de <a href="resources/arduino.jpg">Arduino</a>.</li>
+<li>
+<p>A continuación vamos a escribir el título que aparece en la imagen inferior e insertamos la imagen de la placa Arduino. Ahora cambiamos el ancho de la imagen a 40mm manteniendo las proporciones y le aplicamos el <strong>filtro de imagen Invertir</strong> con el botón de filtro de imagen <img alt="button-filtro-imagen " src="imagenes/writer110.png" />. El resultado será el siguiente.
+<figure style="align: center;">
+        <img src="./imagenes/writer111.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Ahora pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle el filtro Pop Art con el botón de filtro de imagen <img alt="button-filtro-imagen" src="imagenes/writer110.png" />.El resultado será el siguiente.</p>
+</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer112.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+<ol start="5">
+<li>Después pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle el filtro dibujo al carboncillo con el botón de filtro de imagen <img alt="button-filtro-imagen" src="imagenes/writer110.png" />. El resultado será el siguiente.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer113.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+<p>6.A continuación pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle <strong>Transparencia al 50%</strong> en el cuadro de transparencia <img alt="button-transparencia-imagen" src="imagenes/writer114.png" /> .El resultado será el siguiente.
+<figure style="align: center;">
+        <img src="./imagenes/writer115.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+<ol start="7">
+<li>Para continuar pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle <strong>Contraste al 50%</strong> con el botón de color <img alt="button-color-imagen" src="imagenes/writer116.png" /> en el cuadro de contraste <img alt="button-contraste-imagen" src="imagenes/writer117.png" />.El resultado será el siguiente</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer118.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+<ol start="8">
+<li>Ahora pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle <strong>Color rojo al 30%</strong> con el botón de color <img alt="button-color-imagen" src="imagenes/writer116.png" /> en el cuadro del color rojo <img alt="button-rojo-imagen" src="imagenes/writer119.png" />. El resultado será el siguiente.</li>
+</ol>
+<p><figure style="align: center;">
+        <img src="./imagenes/writer120.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+<ol start="9">
+<li>
+<p>Por último pasaremos con la tecla Return a la fila inferior y volveremos a escribir el título, a insertar la imagen, cambiar su tamaño y aplicarle <strong>Modo de imagen Escala</strong> de grises con el botón de modo de imagen <img alt="button-modo-imagen" src="imagenes/writer121.png" /> .El resultado será el siguiente.
+<figure style="align: center;">
+        <img src="./imagenes/writer122.png">
+        <figcaption>Resultado parcial ejercicio</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Ahora cambiamos el factor de escala al 75% para ver la hoja entera.
+<figure style="align: center;">
+        <img src="./imagenes/writer123.png">
+        <figcaption>Resultado final</figcaption>
+    </figure></p>
+</li>
+</ol>
+</details>
+<h2 id="tablas">Tablas<a class="headerlink" href="#tablas" title="Permanent link">&para;</a></h2>
+<p>Las tablas permiten organizar datos de forma clara y estructurada, facilitando la comparación y comprensión de la información. En Word y Writer se pueden insertar, modificar y dar formato a tablas para adaptarlas al contenido y mejorar su presentación.</p>
+<p>En <strong>Word</strong>, estas opciones están en <strong>Insertar → Tabla</strong>. En <strong>Writer</strong>, en <strong>Insertar → Tabla</strong>.</p>
+<ul>
+<li><strong>Insertar tabla</strong>  </li>
+<li><strong>Word:</strong> Insertar → Tabla (seleccionar filas y columnas o usar “Insertar tabla”).  </li>
+<li>
+<p><strong>Writer:</strong> Insertar → Tabla (definir número de filas y columnas).  </p>
+</li>
+<li>
+<p><strong>Añadir o eliminar filas y columnas</strong>  se realiza mediante botón derecho sobre la tabla → seleccionar “Insertar fila/columna” o “Eliminar fila/columna”.</p>
+</li>
+<li>📐 <strong>Cambiar tamaño</strong>   Ajustar ancho de columnas y alto de filas arrastrando los bordes.  Colocar el cursor en el borde de la fila o columna → arrastrar hasta el tamaño deseado. También se puede ajustar en las opciones de “Propiedades de tabla”.</li>
+<li><strong>Ajustar posición</strong>  Colocar la tabla en línea con el texto o con ajuste alrededor del mismo Botón derecho sobre la tabla → “Propiedades de tabla” → en “Posición” elegir “En línea con el texto” o “Ajuste de texto”</li>
+<li><strong>Alineación</strong>  Botón derecho sobre la tabla → “Alineación” → seleccionar izquierda, derecha o centrada.</li>
+<li><strong>Estilos y bordes</strong>  Mejorar el aspecto visual de la tabla.Seleccionar la tabla → pestaña “Diseño de tabla” (Word) o menú “Tabla” (Writer) → elegir estilo predefinido o personalizar bordes y colores.</li>
+<li><strong>Formato de celda</strong>  Modificar fondo, fuente y alineación del contenido. Seleccionar las celdas → botón derecho → “Formato de celda” → ajustar color, alineación y fuente.</li>
+<li><strong>Opciones avanzadas</strong>  Funciones adicionales para personalizar la tabla. Botón derecho sobre la tabla → elegir opciones como “Combinar celdas”, “Dividir celdas”, “Definir encabezados”, “Repetir filas” o “Insertar fórmula”.</li>
+</ul>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa218-tablas">📝 <strong>AA2.18</strong> Tablas<a class="headerlink" href="#aa218-tablas" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abrimos un documento en blanco. </li>
+<li>
+<p>A continuación crearemos una tabla. En el menú Tabla... Insertar tabla... rellenamos el cuadro de diálogo con los siguientes valores.</p>
+<ul>
+<li>Columnas = 6</li>
+<li>Filas = 8</li>
+<li>Estilos = Estilo de tabla predeterminado.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer125.png">
+    <figcaption>Insertar tabla</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Al terminar pulsamos en el botón <strong>Insertar</strong> y obtendremos una tabla como la de la siguiente figura.</p>
+</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer126.png">
+    <figcaption>Resultado parcial</figcaption>
+</figure></p>
+<ol start="4">
+<li>
+<p>Ahora rellenaremos la tabla con los siguientes datos que nos van a servir para diseñar un horario de las tardes.
+<figure style="align: center;">
+    <img src="./imagenes/writer127.png">
+    <figcaption>Resultado parcial</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Una vez que tenemos la tabla con los datos vamos a dar formato al texto. Selecciona todas las celdas de arriba pinchando en la celda LUNES y arrastrando hasta la celda VIERNES. Ahora con el botón de <strong>Color de fondo de celdas de tabla</strong> cambiamos el color de fondo por Añil.</p>
+</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer128.png">
+    <figcaption>Color fondo</figcaption>
+</figure></p>
+<ol start="6">
+<li>
+<p>También podemos cambiar el color de <strong>fondo</strong> de las celdas en el menú Tabla... Propiedades... en la pestaña Fondo.Ahora con el botón de Color de letra cambiaremos el color del texto por <strong>Blanco</strong>
+    <figure style="align: center;">
+        <img src="./imagenes/writer129.png">
+        <figcaption>Color fondo</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Por último centraremos el texto con el botón  <img alt="button-centrado" src="imagenes/writer136.png" />. y cambiaremos el tipo de letra a <strong>Liberation Sans</strong> con estilo <strong>Negrita</strong>. Esto lo podemos hacer con los botones de la tabla de herramientas o con el menú Formato... Carácter... Pinchamos en la primera celda y el resultado será el siguiente.
+    <figure style="align: center;">
+        <img src="./imagenes/writer130.png">
+        <figcaption>Resultado parcial</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>A continuación repetimos los mismos pasos anteriores para cambiar el formato de las celdas de la izquierda.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer134.png">
+    <figcaption>Resultado parcial</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Para terminar seleccionaremos la primera celda colocando el cursor en ella y con el menú Tabla... Seleccionar... Celda.
+    <figure style="align: center;">
+        <img src="./imagenes/writer131.png">
+        <figcaption>Resultado parcial</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Una vez seleccionada la primera celda escogemos en el menú Tabla... Propiedades... en la pestaña <strong>Borde</strong> pinchando con el ratón quitaremos los bordes izquierdo y superior, mientras que mantendremos los bordes derecho e inferior.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/writer132.png">
+    <figcaption>Resultado parcial</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Ahora podemos ver con el botón de vista de impresión <img alt="button-vista-impresion" src="imagenes/writer135.png" /> cómo quedará nuestra tabla al imprimirla.
+<figure style="align: center;">
+    <img src="./imagenes/writer133.png">
+    <figcaption>Resultado final</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Añade una fila al final y combina todas sus celdas.</p>
+</li>
+</ol>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guia <a href="resources/Guia-Writer-7.3.pdf">LibreOffice Writer 7.3</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="5_ProcesadorTextos3.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 2.3- Estilos de páginas, textos y párrafos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                2.3- Estilos de páginas, textos y párrafos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="7_ProcesadorTextos5.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 2.5- Índices, portadas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                2.5- Índices, portadas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
