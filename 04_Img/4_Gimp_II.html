@@ -1,0 +1,1895 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Edición de imágenes con GIMP">
+      
+      
+        <meta name="author" content="Elena Aznar">
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/04_Img/4_Gimp_II.html">
+      
+      
+        <link rel="prev" href="3_Gimp.html">
+      
+      
+        <link rel="next" href="../05_Web/3_HTML_I.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Edición de imágenes con GIMP - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#edicion-de-imagenes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Edición de imágenes con GIMP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD1: Identidad digital y entorno de trabajo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD1: Identidad digital y entorno de trabajo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/4_Informacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2- La información: búsqueda, selección y evaluación.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/5_EntornoPersonalAprendizaje.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3- El entorno personal de aprendizaje
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD2: Procesadores de texto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD2: Procesadores de texto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/3_ProcesadorTextos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Introducción a la ofimática
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/4_ProcesadorTextos2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/5_ProcesadorTextos3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3- Estilos de páginas, textos y párrafos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/6_ProcesadorTextos4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4- Corrección ortográfica, imágenes y tablas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%20Documentos/7_ProcesadorTextos5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5- Índices, portadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD3: Hoja de cálculo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD3: Hoja de cálculo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/3_Calc_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1- Introducción a la hoja de cálculo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/4_Calc_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/5_Calc_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3- Gráficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD4: Retoque de imágenes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            UD4: Retoque de imágenes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Gimp.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1- Introducción a GIMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.2- Operaciones básicas
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="4_Gimp_II.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modos-de-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modos de color
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modos de color">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paleta-de-color-gimp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paleta de color GIMP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paleta de color GIMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa43-color" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.3 Color
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar44-saturacion-coche" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.4 Saturación coche
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar45-color-camiseta" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.5 Color camiseta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa46-color-camiseta" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.6 Color camiseta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retoques-fotograficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retoques fotográficos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Retoques fotográficos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa47-la-figura-humana-i" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.7 La figura humana I
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa48-la-figura-humana-ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.8 La figura humana II
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa49-la-figura-humana-iii" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.9 La figura humana III
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa410-la-figura-humana-iv" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.10 La figura humana IV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar410-la-figura-humana-iv" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.10 La figura humana IV
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD5: Programación web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            UD5: Programación web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_Web/3_HTML_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1- Introducción a las páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Dispositivos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Dispositivos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD6: Ordenadores y sistemas de comunicación 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD6: Ordenadores y sistemas de comunicación 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_HW/3_Hw_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1- Ordenadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD7: Sistemas Operativos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD7: Sistemas Operativos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_SW/3_SO_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1- Sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 3: Seguridad y bienestar digital 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 3: Seguridad y bienestar digital 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD8: Seguridad en la red
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD8: Seguridad en la red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Ciber/3_Ciber_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1- Ciberseguridad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 4: Ciudadanía digital crítica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 4: Ciudadanía digital crítica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD9: Ciudadanía 2.0
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD9: Ciudadanía 2.0
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_CudadanoDigital/3_Ciudadano_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1- Ciudadanía digital
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--  http://www.ite.educacion.es/formacion/materiales/86/cd/m12/el_color_en_gimp.html
+
+
+-->
+
+<h1 id="edicion-de-imagenes"><img alt="icono" src="imagenes/icono_gimp.png" width="55" /> Edición de imágenes<a class="headerlink" href="#edicion-de-imagenes" title="Permanent link">&para;</a></h1>
+<h2 id="modos-de-color">Modos de color<a class="headerlink" href="#modos-de-color" title="Permanent link">&para;</a></h2>
+<p>Llamamos modos de color a <strong>las distintas formas en que una imagen puede representar los colores</strong>.</p>
+<p>Cada modo utiliza una combinación diferente de valores o componentes para definir el color de cada punto (píxel) de la imagen.</p>
+<p>Elegir el modo adecuado depende del uso que vayamos a dar a la imagen: mostrarla en pantalla, guardarla para la web o prepararla para imprimir.</p>
+<p>Los principales modelos son:</p>
+<ul>
+<li>
+<p>El <strong>modo RGB</strong> es el más común y se usa para imágenes que se verán en pantallas (Internet, aplicaciones multimedia o impresoras domésticas).</p>
+<p>Este sistema mezcla los tres colores de luz primarios: <strong>Rojo (R), Verde (G) y Azul (B)</strong>.
+ Cada uno puede tener un valor entre 0 (sin color) y 255 (máxima intensidad).
+Combinando esos valores se pueden representar millones de colores diferentes.
+Cuando trabajamos con fotografías o gráficos digitales, el modo RGB es el más adecuado, ya que ofrece la mayor calidad y variedad de tonos.</p>
+</li>
+<li>
+<p>El modo <strong>Indexado</strong> es para archivos de imagen en formato <strong>GIF</strong> o <strong>PNG</strong> destinados a Internet. El máximo de colores en este modo es de <strong>256</strong>, y uno de ellos puede ser transparente.</p>
+</li>
+<li>
+<p>El modo <strong>Escala de grises</strong> sirve para eliminar la información de color y usando solo tonos entre el blanco y el negro. Puede servirnos para trabajar con fotografías en B/N o para aplicar ciertos efectos artísticos.</p>
+</li>
+<li>
+<p>El modo <strong>CMYK</strong> se utiliza cuando la imagen se va a imprimir en cuatricromía (imprentas). Este modo, por ahora, no está soportado por <strong>GIMP</strong>.</p>
+<p>Se basa en la mezcla de pigmentos (síntesis sustractiva) de los siguientes colores, que permiten los que necesitemos:</p>
+<ul>
+<li><strong>C</strong> = <strong>Cyan</strong> (Cian).</li>
+<li><strong>M</strong> = <strong>Magenta</strong> (Magenta).</li>
+<li><strong>Y</strong> = <strong>Yellow</strong> (Amarillo).</li>
+<li><strong>K</strong> = <strong>Black</strong> ó <strong>Key</strong> (Negro).</li>
+</ul>
+<p>Sea cual sea el origen de la imagen, cuando trabajamos con imágenes en el ordenador, lo más correcto es utilizar el modo <strong>RGB</strong>, que nos asegura millones de colores (imágenes de 24 bits), para después tratarla y adecuarla a nuestras necesidades.</p>
+</li>
+<li>
+<p>El modelo <strong>HSV</strong> (Hue, Saturation, Value - Tonalidad, Saturación, Valor); también llamado <strong>HSB</strong> (Hue, Saturation, Brightness - Tonalidad, Saturación, Brillo) describe los colores según tres características:</p>
+<ul>
+<li><strong>H=Tono</strong>. Define el color real y se mide como una posición en la rueda de colores estándar, expresándose en grados entre 0º y 360º.</li>
+<li><strong>S= Saturación</strong>. Es la fuerza o pureza del color, la cantidad de gris que se añade al tono del color y se mide como el porcentaje comprendido entre 0% (color gris) y 100% (saturación completa del color).</li>
+<li><strong>V= Brillo</strong>. Es la luminosidad u oscuridad relativa al color elegido y se mide con un porcentaje comprendido entre 0% (negro) y 100% (blanco).</li>
+</ul>
+<p>Este modelo se usa mucho en GIMP para ajustar colores de forma visual, ya que permite cambiar tono, intensidad y brillo de manera independiente.</p>
+</li>
+</ul>
+<h3 id="paleta-de-color-gimp">Paleta de color GIMP<a class="headerlink" href="#paleta-de-color-gimp" title="Permanent link">&para;</a></h3>
+<p>Desde la <strong>Caja de herramientas</strong> puedes acceder a las distintas paletas desde donde elegir un color sólido (<strong>RGB</strong>) con el que pintar.</p>
+<p>Esta paleta es la que usa GIMP por defecto y tiene el siguiente aspecto.</p>
+<figure style="align: center;">
+    <img src="./imagenes/gimp35.png">
+    <figcaption>Paleta Gimp</figcaption>
+</figure>
+
+<p>Podemos distinguir zonas comunes a todas las paletas y zonas específicas de cada una de ellas. La específica de cada modo es la que se sitúa en el cuadrado de color, justo debajo de las pestañas de acceso al modo de elección de color.</p>
+<p>Las comunes son las siguientes:</p>
+<ol>
+<li><strong>Pestañas</strong> para acceder a los otros tipos de paleta.</li>
+<li><strong>Zona específica de cada paleta de color</strong>.</li>
+<li>Elección directa conociendo <strong>tono</strong>, <strong>saturación</strong> y <strong>brillo</strong> (por <strong>HSV</strong>).</li>
+<li>Elección directa conociendo la cantidad de cada color (por <strong>RGB</strong>).</li>
+<li>Introducción del <strong>valor</strong> <strong>hexadecimal</strong> o <strong>Notación HTML</strong>.</li>
+<li><strong>Cuentagotas</strong> para elegir cualquier color de la pantalla, esté en <strong>GIMP</strong> o en cualquier otro programa abierto en ese momento.</li>
+<li><strong>Colores</strong> recientemente utilizados.</li>
+<li>Comparación entre los colores <strong>actual</strong> y <strong>anterior</strong>.</li>
+</ol>
+<p>Para la elección de un color puedes utilizar cualquiera de las zonas marcadas, primero eliges el <strong>tono</strong> y luego su <strong>saturación</strong> y <strong>brillo</strong>. Otra opción es introducir los valores de cada color <strong>RGB</strong> o de <strong>HSV</strong> (en español sería <strong>TSB</strong>, <strong>Tono</strong>, <strong>Saturación</strong> y <strong>Brillo</strong>) o el <strong>valor hexadecimal</strong>; este valor corresponde a la expresión en hexadecimal de los valores en decimal correspondientes a <strong>R</strong> (rojo), <strong>G</strong> (verde) y <strong>B</strong> (azul).</p>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa43-color">📝 <strong>AA4.3</strong> Color<a class="headerlink" href="#aa43-color" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Descarga la siguiente <a href="resources/sumo.jpg">imagen de sumo</a></li>
+<li>Utiliza la herramienta del menú: “Colores -&gt; Desaturar” para convertirla en blanco y negro.s.</li>
+<li>Guarda la nueva imagen formato <strong>pdf</strong>.</li>
+<li>A continuación,  utiliza la herramienta del menú: “Colores -&gt; Colorear” para convertir la imagen a cualquier otra tonalidad de colores (sepia, azules, etc). </li>
+<li>Guarda la nueva imagen formato <strong>pdf</strong>.</li>
+<li>Por último, utiliza la herramienta del menú: “Colores -&gt; Tono y Saturación” para modificar un determinado color de la imagen.</li>
+<li>Guarda la nueva imagen formato <strong>pdf</strong>.</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aar44-saturacion-coche">🔨 <strong>AAR4.4</strong> Saturación coche<a class="headerlink" href="#aar44-saturacion-coche" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Descarga la siguiente <a href="resources/coche.jpg">imagen del coche</a></li>
+<li>Utiliza la herramienta del menú: “Colores -&gt; Tono y Saturación” para modificar un determinado color de la imagen y que quede como la siguiente imagen:</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/Coche1_Final.png" width="255">
+    <figcaption>Paleta Gimp</figcaption>
+</figure></p>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aar45-color-camiseta">🔨 <strong>AAR4.5</strong> Color camiseta<a class="headerlink" href="#aar45-color-camiseta" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abre la fotografía <a href="resources/CASIMETA.JPG">camiseta.jpg</a> y modifica su color tal como hemos visto en los ejercicios anteriores. Puedes ayudarte con el <a href="resources/video_camiseta.mp4">vídeo</a>.</li>
+<li>Una vez hayas realizado el ejemplo, intenta hacer lo mismo con la imagen <a href="resources/Camiseta%202.jpg">camiseta 2</a>. El color puedes elegirlo tú.</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa46-color-camiseta">📝 <strong>AA4.6</strong> Color camiseta<a class="headerlink" href="#aa46-color-camiseta" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Abre la fotografía <a href="resources/COLOR-bN%201.jpg">Color-BN1.jpg</a> y modifica su color tal como se muestra en el [vídeo](./resources/vídeo%2026.mp4.</li>
+<li>Una vez hayas realizado el ejemplo, intenta hacer lo mismo con la imagen <a href="resources/COLOR-bN%202.jpg">Color-BN2.jpg</a>. Debes hacer que se quede el pelo en color y el resto de la imagen en blanco y negro.</li>
+</ol>
+</details>
+<h2 id="retoques-fotograficos">Retoques fotográficos<a class="headerlink" href="#retoques-fotograficos" title="Permanent link">&para;</a></h2>
+<p>Desde los orígenes de la fotografía, el principal tema fotográfico ha sido la figura humana. Siempre ha habido un interés especial en mejorar las fotografías en las que aparecen personas, pero desde la aparición de la fotografía digital, el conseguir un retrato favorecedor ha sido más fácil que nunca. Todas y todos hemos visto alguna foto "retocada" de algún famoso o famosa en los medios de comunicación, sobre todo, en También en la política se utiliza el retoque para que los líderes políticos den buena "imagen":</p>
+<figure style="align: center;">
+    <img src="./imagenes/politico.png">
+    <figcaption>Antes y después</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa47-la-figura-humana-i">📝 <strong>AA4.7</strong> La figura humana I<a class="headerlink" href="#aa47-la-figura-humana-i" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Las prácticas de este apartado con la dedicada a quitar las arrugas de un rostro. Puedes ayudarte del siguiente <a href="resources/video27.mp4">vídeo</a></p>
+<ol>
+<li>Abre la fotografía <a href="resources/quitar_arrugas.jpg">quitar_arrugas.jpg</a>.<br />
+2.Duplicamos la capa Fondo. </li>
+<li>Herramienta de saneado (la tirita). </li>
+<li>Seleccionamos el pincel Circle Fuzzy (es un pincel blando), Escala de 1,00. </li>
+<li>Manteniendo apretada la tecla CONTROL del teclado, hacemos clic en una zona limpia de arrugas, pero cerca de una de ellas. </li>
+<li>Soltamos la tecla CONTROL, y vamos haciendo varios clics encima de la arrugas y ojeras de un ojo. </li>
+<li>Repetimos la operación en todas las zonas con arrugas de la cara (el otro ojo, frente, boca, cuello), hasta que esté "limpia" de arrugas. </li>
+<li>Si es necesario, bajamos la escala del pincel para quitar las arrugas de las zonas más pequeñas. </li>
+<li>Si no queremos que desaparezcan del todo las arrugas, y dejar la cara más natural (con ligeras arrugas de expresión), bajamos la opacidad de la capa Copia hasta conseguir el efecto deseado. </li>
+<li>Combinamos las capas visibles. </li>
+<li>Guardamos proyecto. </li>
+<li>Exportamos resultado en pdf.</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa48-la-figura-humana-ii">📝 <strong>AA4.8</strong> La figura humana II<a class="headerlink" href="#aa48-la-figura-humana-ii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Seguimos mejorando el retrato de la práctica anterior. Ahora vamos a cambiar el color de los ojos. Puedes ayudarte del siguiente <a href="./resources/video32.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen corregida de "quitar_arrugas_corregida.jpg" obtenida en la práctica anterior. </li>
+<li>Creamos una capa nueva, transparencia. </li>
+<li>Herramienta de selección elíptica. </li>
+<li>Hacemos clic en un ojo, y arrastramos el ratón hasta cubrir una pupila. </li>
+<li>Para realizar un ajuste perfecto, podemos estirar de los cuadrados de las esquinas hasta encajar la selección a la pupila del ojo. </li>
+<li>Hacemos clic en Añadir a la selección. </li>
+<li>Repetimos los pasos anteriores en el otro ojo. </li>
+<li>Seleccionamos el color frontal que queramos para cambiar el color de los ojos (por ejemplo, un verde o un azul). </li>
+<li>Herramienta bote de pintura. </li>
+<li>Hacemos clic dentro de la selección de la pupila. </li>
+<li>Modo de fusión Solapar. </li>
+<li>Quitamos la selección. </li>
+<li>Bajamos la opacidad de la capa nueva. </li>
+<li>Combinamos las capas. </li>
+<li>Guardamos como. </li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa49-la-figura-humana-iii">📝 <strong>AA4.9</strong> La figura humana III<a class="headerlink" href="#aa49-la-figura-humana-iii" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Vamos a quitar de golpe todas las manchas e imperfecciones de la piel de nuestro retrato (tratamiento de lifting digital). Puedes ayudarte del siguiente <a href="./resources/video33.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen del cambio de color de ojos de la práctica anterior. </li>
+<li>Duplicamos la capa. </li>
+<li>Desmarcamos el ojo de la capa Fondo. </li>
+<li>Seleccionamos la herramienta de goma de borrar, pincel Circle Fuzzy, escala de 4. </li>
+<li>Borramos todo lo que no sea la piel de la modelo (fondo, pelo). </li>
+<li>Reducimos la escala del pincel para borrar bien los bordes. </li>
+<li>Reducimos más la escala y borramos las cejas, ojos, boca y las zonas con un cambio de color en la piel de la modelo. </li>
+<li>Filtros &gt; Desenfoque &gt; Desenfoque gaussiano. </li>
+<li>Aplicamos un Radio de desenfoque de 5 (tanto en Horizontal como en Vertical). Aceptar. </li>
+<li>Hacemos visible la capa Fondo (marcamos su ojo). </li>
+<li>Combinamos las capas. </li>
+<li>Guardamos como.</li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa410-la-figura-humana-iv">📝 <strong>AA4.10</strong> La figura humana IV<a class="headerlink" href="#aa410-la-figura-humana-iv" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Para finalizar, vamos a aplicar un maquillaje a la fotografía de un retrato digital. Puedes ayudarte del siguiente <a href="./resources/video34.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen anterior del lifting digital. </li>
+<li>Creamos una capa nueva transparente. </li>
+<li>Herramienta pincel, Circle fuzzy, escala 1. </li>
+<li>Elegimos un color de frente (por ejemplo, rosa, azul, verde...) </li>
+<li>Pintamos encima de los dos ojos. </li>
+<li>Si nos salimos, borramos con la goma de borrar. </li>
+<li>Modo de fusión solapar. </li>
+<li>Bajamos la opacidad de la capa. </li>
+<li>Creamos otra capa transparente. </li>
+<li>Volvemos a seleccionar el pincel, y pintamos las mejillas de "colorete". </li>
+<li>Modo de fusión solapar, y bajamos la opacidad a gusto. </li>
+<li>Seleccionamos un color frontal rojo. </li>
+<li>Reducimos la escala del pincel. </li>
+<li>Creamos otra capa transparente. </li>
+<li>Pintamos los labios. </li>
+<li>Borramos si nos salimos del contorno de los labios. </li>
+<li>Modo de fusión solapar, bajamos la opacidad de la capa. </li>
+<li>Guardamos la imagen en formato .xcf, de esa manera se guardan todas las capas y, si en un futuro queremos modificar el color de una de las capas, la tenemos disponible y no tenemos que empezar todo desde el principio. Después, podemos combinar las capas visibles y guardar la imagen en formato .jpg, para poder visionarla en nuestro ordenador 
+sin necesidad de abrir el GIMP. </li>
+<li>Enviamos la imagen. </li>
+</ol>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aar410-la-figura-humana-iv">🔨 <strong>AAR4.10</strong> La figura humana IV<a class="headerlink" href="#aar410-la-figura-humana-iv" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Realiza el proceso anterior con la foto <a href="resources/Bel%C3%A9n.jpeg">Belén.jpg</a>.</p>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guía <a href="https://docs.gimp.org/es/">Gimp 2.10</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="3_Gimp.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.1- Introducción a GIMP">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                4.1- Introducción a GIMP
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05_Web/3_HTML_I.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5.1- Introducción a las páginas web">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                5.1- Introducción a las páginas web
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
