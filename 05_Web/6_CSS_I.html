@@ -1,0 +1,1914 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introducción a la programación en bloques.">
+      
+      
+        <meta name="author" content="Elena Aznar">
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/05_Web/6_CSS_I.html">
+      
+      
+        <link rel="prev" href="5_HTML_III.html">
+      
+      
+        <link rel="next" href="7_hosting.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Introducción a la programación en bloques. - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hojas-de-estilo-en-cascada-cascading-style-sheets-css" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introducción a la programación en bloques.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD1: Identidad digital y entorno de trabajo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD1: Identidad digital y entorno de trabajo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/4_Informacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2- La información: búsqueda, selección y evaluación.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_EPA/5_EntornoPersonalAprendizaje.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3- El entorno personal de aprendizaje
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD2: Procesadores de texto y presentaciones
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD2: Procesadores de texto y presentaciones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/3_ProcesadorTextos.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Introducción a la ofimática
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/4_ProcesadorTextos2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/5_ProcesadorTextos3.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3- Estilos de páginas, textos y párrafos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/6_ProcesadorTextos4.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4- Corrección ortográfica, imágenes y tablas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/7_ProcesadorTextos5.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5- Índices, portadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/8_Presentaciones.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.6- Presentaciones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD3: Hoja de cálculo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD3: Hoja de cálculo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/2_ResumenUD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resumen unidad didáctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/3_Calc_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1- Introducción a la hoja de cálculo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/4_Calc_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/5_Calc_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3- Gráficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD4: Retoque de imágenes, vídeo y audio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            UD4: Retoque de imágenes, vídeo y audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Img/2_ResumenUD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resumen unidad didáctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Img/3_Gimp.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1- Introducción a GIMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Img/4_Gimp_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD5: Programación web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            UD5: Programación web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2_ResumenUD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resumen unidad didáctica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_HTML_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1- Introducción a las páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_HTML_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2- Introducción a HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_HTML_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3- Elementos contenido de HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5.4- Hojas de estilo CSS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="6_CSS_I.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5.4- Hojas de estilo CSS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aplicar-los-estilos-a-las-paginas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aplicar los estilos a las páginas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estilos-basicos-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estilos básicos CSS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estilos básicos CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa59-tu-primera-pagina-web-con-estilo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA5.9 Tu primera página web con estilo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apt510-estilo-en-el-curriculum" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 APT5.10 Estilo en el currículum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_hosting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.5- Publicación de páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Dispositivos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Dispositivos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD6: Ordenadores y sistemas de comunicación 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD6: Ordenadores y sistemas de comunicación 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_SW/3_SO_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1- Ordenadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD7: Sistemas Operativos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD7: Sistemas Operativos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_SW/3_SO_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.1- Ordenadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 3: Seguridad y bienestar digital 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 3: Seguridad y bienestar digital 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD8: Seguridad en la red
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD8: Seguridad en la red
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_Ciber/3_Ciber_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1- Ciberseguridad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD9: Ciudadanía digital crítica
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD9: Ciudadanía digital crítica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_CudadanoDigital/3_Ciudadano_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1- Ciudadanía 2.0
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--  https://sites.google.com/site/migueltecnologia/3%C2%BA-eso/computaci%C3%B3n-y-rob%C3%B3tica-3/unidad-1-edici%C3%B3n-de-p%C3%A1ginas-web-con-html
+
+https://sites.google.com/site/migueltecnologia/3%C2%BA-eso/computaci%C3%B3n-y-rob%C3%B3tica-3/unidad-1-edici%C3%B3n-de-p%C3%A1ginas-web-con-html?authuser=0
+
+-->
+
+<h1 id="hojas-de-estilo-en-cascada-cascading-style-sheets-css"><img alt="icono" src="imagenes/icono_css.png" width="75" /> Hojas de estilo en cascada <em>(Cascading Style Sheets (CSS))</em><a class="headerlink" href="#hojas-de-estilo-en-cascada-cascading-style-sheets-css" title="Permanent link">&para;</a></h1>
+<p>CSS es un lenguaje de estilo utilizado para <strong>definir la presentación</strong> y el diseño de documentos <em>HTML</em> . Con <em>CSS</em>, se puede controlar la apariencia de los elementos de una página <em>web</em> , como el color de fondo, la tipografía, el espaciado, los bordes y la disposición de los elementos en pantalla.</p>
+<p>Una hoja de estilos es un archivo con extensión <code>.CSS</code> que contiene los formatos de texto prediseñados de algunas etiquetas.</p>
+<p>El archivo <code>.CSS</code> debe ir junto al archivo <code>.HTML</code>, aunque también puede incluirse el contenido del archivo .CSS dentro del archivo .HTML.</p>
+<p>Las hojas de estilo están formadas por reglas, y las reglas están formadas por el selector y entre llaves las declaraciones separadas por punto y coma.</p>
+<p>Una declaración es un atributo (propiedad) seguido por dos puntos y a continuación el valor de la propiedad.</p>
+<figure style="align: center;">
+    <img src="./imagenes/web10.png">
+    <figcaption>Etiquetas CSS</figcaption>
+</figure>
+
+<h2 id="aplicar-los-estilos-a-las-paginas">Aplicar los estilos a las páginas<a class="headerlink" href="#aplicar-los-estilos-a-las-paginas" title="Permanent link">&para;</a></h2>
+<p>Para aplicar un estilo o un conjunto de estilos <em>CSS</em> a una página <em>web</em> , tenemos varias alternativas:</p>
+<ol>
+<li>
+<p><strong>Definir los estilos en el bloque <em>head</em> de la página</strong></p>
+<p>Podemos también definir todo el conjunto de estilos de la página en su bloque <code>head</code>, empleando para ello una etiqueta <code>style</code> que englobe todas las reglas. Por ejemplo, para aplicar los dos estilos del ejemplo anterior (para párrafos y <code>h1</code>) a toda la página, pondríamos algo como esto en el <code>head</code>:</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="w">  </span><span class="o">&lt;!</span><span class="nt">DOCTYPE</span><span class="w"> </span><span class="nt">html</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="w">  </span><span class="o">&lt;</span><span class="nt">html</span><span class="w"> </span><span class="nt">lang</span><span class="o">=</span><span class="s2">&quot;es-ES&quot;</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="w">    </span><span class="o">&lt;</span><span class="nt">head</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="w">      </span><span class="o">&lt;</span><span class="nt">meta</span><span class="w"> </span><span class="nt">charset</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="w"> </span><span class="o">/&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="w">      </span><span class="o">&lt;</span><span class="nt">title</span><span class="o">&gt;</span><span class="nt">Ejemplo</span><span class="w"> </span><span class="nt">de</span><span class="w"> </span><span class="nt">párrafo</span><span class="w"> </span><span class="nt">rojo</span><span class="w"> </span><span class="nt">y</span><span class="w"> </span><span class="nt">centrado</span><span class="o">&lt;/</span><span class="nt">title</span><span class="o">&gt;</span>
+<span class="hll"><span class="linenos" data-linenos=" 6 "></span><span class="w">      </span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+</span><span class="linenos" data-linenos=" 7 "></span><span class="w">        </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">          </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="w">          </span><span class="k">text-align</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="linenos" data-linenos="10 "></span><span class="w">        </span><span class="p">}</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">      </span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">    </span><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos="13 "></span><span class="w">    </span><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos="14 "></span><span class="w">      </span><span class="o">&lt;</span><span class="nt">p</span><span class="o">&gt;</span><span class="nt">Esto</span><span class="w"> </span><span class="nt">es</span><span class="w"> </span><span class="nt">un</span><span class="w"> </span><span class="nt">párrafo</span><span class="w"> </span><span class="nt">de</span><span class="w"> </span><span class="nt">color</span><span class="w"> </span><span class="nt">rojo</span><span class="w"> </span><span class="nt">y</span><span class="w"> </span><span class="nt">centrado</span><span class="o">.&lt;/</span><span class="nt">p</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos="15 "></span><span class="w">    </span><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
+<span class="linenos" data-linenos="16 "></span><span class="w">  </span><span class="o">&lt;/</span><span class="nt">html</span><span class="o">&gt;</span>
+</code></pre></div>
+<figure style="align: center;">
+    <img src="./imagenes/web11.png">
+    <figcaption>Texto en rojo</figcaption>
+</figure></p>
+<p><strong>Esta opción tampoco es muy recomendable si queremos aplicar el mismo estilo en diversas páginas</strong>, porque tendríamos que repetir el mismo bloque <code>style</code> en todas, con los consiguientes problemas de duplicidad que tendríamos si queremos hacer cualquier cambio.</p>
+</li>
+<li>
+<p><strong>Definir los estilos en un documento <em>CSS</em> aparte</strong></p>
+<p>Como segunda alternativa (y <strong>la más recomendable</strong> en la mayoría de casos), podemos definir todos los estilos en un documento <em>CSS</em> aparte, guardado con extensión <code>css</code>, y después enlazar ese archivo con la página <em>web</em> , desde el <code>head</code> de la misma. Por ejemplo, si el archivo de estilos lo hemos llamado <code>estilos.css</code> y está en la misma carpeta que la página <em>web</em> donde aplicarlo, pondríamos algo así en el <code>head</code> (el atributo <code>type</code> es opcional):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ejemplo.html</label><label for="__tabbed_1_2">estilos.css</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es-ES&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span>      <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span>          <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span>            <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejemplo de párrafo rojo y centrado<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="hll"><span class="linenos" data-linenos=" 6 "></span>            <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;StyleSheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;estilos.css&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+</span><span class="linenos" data-linenos=" 7 "></span>      <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span>      <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span>          <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es un párrafo de color rojo y centrado.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="10 "></span>      <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="kc">red</span><span class="p">;</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="linenos" data-linenos="3 "></span><span class="w">        </span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
+<span class="linenos" data-linenos="4 "></span>
+<span class="linenos" data-linenos="5 "></span><span class="w">  </span><span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+<h2 id="estilos-basicos-css">Estilos básicos CSS<a class="headerlink" href="#estilos-basicos-css" title="Permanent link">&para;</a></h2>
+<p>Algunas de las propiedades <em>CSS</em> relacionadas con el color y el fondo más utilizadas son las siguientes:</p>
+<ol>
+<li>
+<p><strong>Color del texto <code>color</code></strong></p>
+<p>La propiedad color se utiliza para definir el <code>color</code> del texto en un elemento HTML.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#FF0000</span><span class="p">;</span><span class="w"> </span><span class="c">/* Color rojo en formato HEX */</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>Color de fondo <code>background-color</code></strong></p>
+<p>La propiedad <code>background-color</code>se utiliza para establecer el color de fondo de un elemento HTML, como un div o una sección.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">style.css</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a1 1 0 0 1-.006.083l-.005.028-.011.053-.01.031-.017.047-.014.03-.021.043-.019.03a.6.6 0 0 1-.08.1l-.026.025-.036.03-.029.022-.01.008-6.782 4.522a.64.64 0 0 1-.708 0L4.864 14.79l-.01-.008a1 1 0 0 1-.065-.052l-.026-.025-.032-.034-.021-.028a.6.6 0 0 1-.067-.11l-.014-.031-.017-.047-.01-.03q-.006-.027-.01-.054l-.006-.028a1 1 0 0 1-.006-.083V9.739a1 1 0 0 1 .006-.083l.005-.027.011-.054.01-.03a.6.6 0 0 1 .12-.217l.031-.034.026-.025a1 1 0 0 1 .065-.052l.01-.008 6.782-4.521a.64.64 0 0 1 .708 0l6.782 4.521.01.008.03.022.035.03q.014.012.026.025a.6.6 0 0 1 .08.1l.019.03.021.043.014.03q.01.024.017.047l.01.031q.006.027.01.054l.006.027a1 1 0 0 1 .006.083zM12 0C5.373 0 0 5.372 0 12c0 6.627 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356 4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"/></svg></span> Ejemplo en CodePen</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="p">.</span><span class="nc">a</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos" data-linenos="2 "></span><span class="p">.</span><span class="nc">b</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#FF0000</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos" data-linenos="3 "></span><span class="p">.</span><span class="nc">c</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">RGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="c">/*Color rojo en formato RGB*/</span>
+<span class="linenos" data-linenos="4 "></span><span class="p">.</span><span class="nc">d</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">HSL</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="kt">%</span><span class="p">,</span><span class="mi">50</span><span class="kt">%</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos" data-linenos="5 "></span><span class="p">.</span><span class="nc">e</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"> </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos" data-linenos="6 "></span><span class="p">.</span><span class="nc">f</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.5</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+<span class="linenos" data-linenos="7 "></span><span class="p">.</span><span class="nc">g</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">transparent</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p><iframe height="300" style="width: 100%;" scrolling="no" title="background-color" src="https://codepen.io/aznarel/embed/xxNXKoO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href="https://codepen.io/aznarel/pen/xxNXKoO">
+background-color</a> by Elena (<a href="https://codepen.io/aznarel">@aznarel</a>)
+on <a href="https://codepen.io">CodePen</a>.
+</iframe></p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Formato de fuente</strong></p>
+<p>Las propiedades <em>CSS</em> de las <strong>fuentes</strong> son las que permiten controlar el tamaño, el tipo, el grosor o el estilo de las letras, entre otras cosas. En la siguiente tabla se muestran las propiedades de las fuentes más destacadas.</p>
+<p>Las <strong>propiedades de las fuentes</strong> más utilizadas son: </p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Descripción</th>
+<th>Valores</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>font-family</code></td>
+<td>Familias de fuentes</td>
+<td>nombre-familia / *</td>
+<td><code>.a  { font-family: "Times New Roman", Times, serif; }</code></td>
+</tr>
+<tr>
+<td><code>font-style</code></td>
+<td>Estilo de la fuente</td>
+<td>normal / italic / oblique</td>
+<td><code>.a  { font-style: normal; }</code></td>
+</tr>
+<tr>
+<td><code>font-variant</code></td>
+<td>Convierte a mayúsculas manteniendo todas las letras en un tamaño inferior a la primera</td>
+<td>normal / small-caps</td>
+<td><code>.a  { font-variant: normal; }</code></td>
+</tr>
+<tr>
+<td><code>font-weight</code></td>
+<td>Anchura de los caracteres. Normal = 400, Negrita = 700</td>
+<td>normal / bold / bolder / lighter / 100 / 200 / 300 / 400 / 500 / 600 / 700 / 800 / 900</td>
+<td><code>.a  { font-weight: normal; }</code></td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Tamaño de la fuente</td>
+<td>xx-small / x-small / small / medium / large / x-large / xx-large / larger / smaller / longitud / porcentaje</td>
+<td><code>.a  { font-size: 20px; }</code></td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a1 1 0 0 1-.006.083l-.005.028-.011.053-.01.031-.017.047-.014.03-.021.043-.019.03a.6.6 0 0 1-.08.1l-.026.025-.036.03-.029.022-.01.008-6.782 4.522a.64.64 0 0 1-.708 0L4.864 14.79l-.01-.008a1 1 0 0 1-.065-.052l-.026-.025-.032-.034-.021-.028a.6.6 0 0 1-.067-.11l-.014-.031-.017-.047-.01-.03q-.006-.027-.01-.054l-.006-.028a1 1 0 0 1-.006-.083V9.739a1 1 0 0 1 .006-.083l.005-.027.011-.054.01-.03a.6.6 0 0 1 .12-.217l.031-.034.026-.025a1 1 0 0 1 .065-.052l.01-.008 6.782-4.521a.64.64 0 0 1 .708 0l6.782 4.521.01.008.03.022.035.03q.014.012.026.025a.6.6 0 0 1 .08.1l.019.03.021.043.014.03q.01.024.017.047l.01.031q.006.027.01.054l.006.027a1 1 0 0 1 .006.083zM12 0C5.373 0 0 5.372 0 12c0 6.627 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356 4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"/></svg></span> Ejemplo en CodePen</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><iframe height="300" style="width: 100%;" scrolling="no" title="fuentesCSS" src="https://codepen.io/aznarel/embed/oNRGeNy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+See the Pen <a href="https://codepen.io/aznarel/pen/oNRGeNy">
+fuentesCSS</a> by Elena (<a href="https://codepen.io/aznarel">@aznarel</a>)
+on <a href="https://codepen.io">CodePen</a>.
+</iframe></p>
+</div>
+</div>
+</div>
+</li>
+</ol>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa59-tu-primera-pagina-web-con-estilo">📝 <strong>AA5.9</strong> Tu primera página web con estilo<a class="headerlink" href="#aa59-tu-primera-pagina-web-con-estilo" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Edita la página web que creaste en el ejercicio anterior y añade estilos. </p>
+<ul>
+<li>El color del fondo <code>background-color</code> a azul.</li>
+<li>La fuente <code>font-family</code> a <code>Arial</code>.</li>
+<li>El tamaño de la letra <code>font-size</code>a 14.</li>
+<li>El color del texto <code>color</code>a blanco.</li>
+</ul>
+</details>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="apt510-estilo-en-el-curriculum">💡 <strong>APT5.10</strong> Estilo en el currículum<a class="headerlink" href="#apt510-estilo-en-el-curriculum" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Teniendo como base todo lo aprendido en esta unidad de trabajo, se pide que seas original y apliques colores, tamaños, estilos de texto, fuentes externas al curriculum realizado en la unidad de trabajo 2.</p>
+<p>Los estilos que se esperan son:</p>
+<ul>
+<li>Fondo en la página.</li>
+<li>Formato de texto.</li>
+</ul>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>w3schools <a href="https://www.w3schools.com/css/default.asp">Tutorial CSS</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="5_HTML_III.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 5.3- Elementos contenido de HTML5">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                5.3- Elementos contenido de HTML5
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="7_hosting.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5.5- Publicación de páginas web">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                5.5- Publicación de páginas web
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
