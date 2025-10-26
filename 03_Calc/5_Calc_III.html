@@ -371,6 +371,8 @@
       
         
       
+        
+      
     
     
     
@@ -515,7 +517,28 @@
         
   
   <span class="md-ellipsis">
-    2.6- Presentaciones
+    2.6- Introducción a Impress
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/9_PresentacionesII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.7- Presentaciones
   </span>
   
 
@@ -805,6 +828,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#aa314-listas-desplegables" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 AA3.14 Listas Desplegables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa315-buscarv-y-validacion-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 AA3.15 Buscarv y validación de datos
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -853,6 +894,8 @@
 https://sites.google.com/site/migueltecnologia/4%C2%BA-eso/digitalizaci%C3%B3n/unidad-2-creaci%C3%B3n-y-gesti%C3%B3n-de-documentos/3-la-hoja-de-c%C3%A1lculo-y-la-base-de-datos?authuser=0
 
 https://profebeto.com/practica-15-excel-funcion-hoy/
+
+https://profebeto.com/practica-19-excel-crear-listas-desplegables/
 -->
 
 <h1 id="hoja-de-calculo"><img alt="icono" src="imagenes/icono_calc.png" width="55" /> Hoja de calculo<a class="headerlink" href="#hoja-de-calculo" title="Permanent link">&para;</a></h1>
@@ -1049,15 +1092,21 @@ https://profebeto.com/practica-15-excel-funcion-hoy/
 <p>La <strong>función HOY en Excel</strong> no tiene parámetros así que para utilizarla solo tienes que colocar su nombre seguido de paréntesis en la celda donde quieres ver la fecha actual:</p>
 <p><code>=HOY()</code></p>
 <p>Si el formato de la ceda donde has colocado la <strong>función HOY</strong> es General, entonces Excel cambiará el formato de la celda a Fecha y mostrará la fecha de hoy:</p>
-<p><img alt="alt text" src="image.png" /></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc56.png">
+</figure></p>
 <p><strong>Números de serie de la función hoy</strong></p>
 <p>Para conocer el número de serie que nos ha devuelto la <strong>función HOY</strong> será suficiente con cambiar el formato de la celda a General:</p>
-<p><img alt="alt text" src="image-1.png" /></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc57.png">
+</figure></p>
 <p>En este ejemplo la fecha 20/09/2012 tiene asignado el número de serie 41172. Excel volverá a mostrar la fecha si cambiamos de nuevo el formato de la celda a Fecha.</p>
 <p>Debes recordar que la <strong>función HOY</strong> actualizará la fecha cada vez que se actualicen las fórmulas de la hoja así que, si guardar y abres el libro de Excel el día de mañana, la función HOY regresará una nueva fecha, es decir, la fecha del día actual.</p>
 <p><strong>Calcular la edad con la función <code>HOY</code></strong></p>
 <p>La <strong>función HOY en Excel</strong> es de utilidad para calcular la edad de una persona si conocemos el año de su nacimiento. En la siguiente fórmula obtendremo el año de la fecha actual y posteriormente le resto el año de la fecha de nacimiento de la persona:</p>
-<p><img alt="alt text" src="image-2.png" /></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc58.png">
+</figure></p>
 <p>El cálculo de edad mostrado no toma en cuenta el día de nacimiento, pero nos da una idea clara sobre la edad de la persona. Recuerda que la <strong>función HOY en Excel</strong> siempre nos devolverá la fecha actual del sistema.</p>
 <p><strong><em>Principales funciones fechas y características generales</em></strong></p>
 <p>Como más habituales de este tipo de funciones tenemos:</p>
@@ -1143,6 +1192,92 @@ https://profebeto.com/practica-15-excel-funcion-hoy/
 <p>Ejemplo: <code>=NUM.DE.SEMANA(FECHA(2010,8,21),2)</code> devuelve <strong>34</strong>. Como el 21 de agosto de 2010 es sábado, el resultado sería 35 si eligiéramos el tipo 16.</p>
 <p><strong>EJERCICIO</strong></p>
 <p>Realizar una tabla con al menos diez funciones de fechas de tres columnas con el nombre de la función, la fecha y el resultado, en formato general.</p>
+</details>
+<details class="question">
+<summary>Actividad Profundización</summary>
+<h4 id="aa314-listas-desplegables">💡 <strong>AA3.14</strong> Listas Desplegables<a class="headerlink" href="#aa314-listas-desplegables" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Lo primero que vamos a hacer es crear un hoja de cálculo con 4 columnas a la que le llamaremos Listas_Articulos: y crearemos una fila con los siguientes títulos, Código, Descripción, Color y Categoría.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc59.png">
+</figure></p>
+<p>Luego vamos a convertir esto en una tabla, entonces seleccionamos la primera celda (donde escribimos “Código”)
+<figure style="align: center;">
+    <img src="./imagenes/calc60.png">
+</figure></p>
+<p>En el menú Insertar, hacemos clic en Tabla, y veremos una ventana, en esa vamos a marcar «La tabla tiene encabezados» le seleccionamose y hacemos clic en el botón Aceptar.
+<figure style="align: center;">
+    <img src="./imagenes/calc61.png">
+</figure></p>
+<p>Ahora vamos a crear una nueva hoja, podemos llamarla “Base_Datos”,</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc62.png">
+</figure></p>
+<p>Aquí vamos a colocar las opciones de la listas desplegables.
+<figure style="align: center;">
+    <img src="./imagenes/calc63.png">
+</figure></p>
+<p>En este caso, esas son los rangos A2:A11, B2:B11 y C2:C11 entonces la seleccionamos uno por uno y le damos un nombre al rango:</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc64.png">
+</figure></p>
+<p>Ahora regresamos a la hoja anterior (Listas_Articulos) y seleccionamos la celda en donde debe ir la lista desplegable y el menú Datos, vamos a hacer clic sobre la opción Validación de Datos.
+<figure style="align: center;">
+    <img src="./imagenes/calc65.png">
+</figure></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc66.png">
+</figure>
+Ahora veremos una ventana ahí vamos a seleccionar la opción ·Lista»  y en el cuadro de texto «Origen» vamos a escribir =Descripción (o elegir el nombre de la lista) .</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc67.png">
+</figure>
+Descripción es el nombre del rango que creaste en los pasos anteriores para los valores de la lista desplegable. Finalmente presionamos el botón Aceptar, como se muestra en la siguiente imagen:
+<figure style="align: center;">
+    <img src="./imagenes/calc68.png">
+</figure></p>
+<p>En el resto de las listas se repiten los pasos anteriores para agregar las listas a cada una de las partes de la tabla
+<figure style="align: center;">
+    <img src="./imagenes/calc69.png">
+</figure></p>
+<p>NOTA:</p>
+<p>Si olvidaste agregar una categoría más, lo primero que harás es agregar más elementos en la hoja en donde esta tus categorías.En el menú Fórmulas , hacemos clic en Administrador de nombres En la ventana que se abre vamos a seleccionar el rango que usamos, en este caso es Categorías, y vamos a modificar la selección de celdas, agregando la celda que contiene los nuevos valores para nuestra lista y finalmente presionamos el botón Cerrar , y cuando Excel nos pregunte si queremos guardar los cambios, le decimos que Si.</p>
+</details>
+<details class="question">
+<summary>Actividad Profundización</summary>
+<h4 id="aa315-buscarv-y-validacion-de-datos">💡 <strong>AA3.15</strong> Buscarv y validación de datos<a class="headerlink" href="#aa315-buscarv-y-validacion-de-datos" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>En este ejercicio se resolverá y calculara un problema hipotético sobre una agencia de viajes, donde construiremos una hoja de excel para que nos muestre una cotización de acuerdo al guía de viaje, de lugar y precio</p>
+<p>Un ejercicio para usar la función buscarV donde una agencia de viajes podrá configurar presupuestos de un modo rápido y fácil.</p>
+<p>Para utilizar correctamente BUSCARV, debes saber cómo introducir la función correctamente. Cada función en Excel tiene una sintaxis determinada de la que no te puedes desviar, ya que de lo contrario, el comando no te devuelve el resultado correcto o emitirá un mensaje de error. BUSCARV se compone de la siguiente sintaxis:</p>
+<p><code>=BUSCARV (valor_buscado, matriz_buscar_en, indicador_columnas, [ordenado])</code></p>
+<ul>
+<li><strong>valor_buscado (requerido):</strong> este parámetro contiene el valor o la cadena que se desea buscar. Puedes introducir este parámetro directamente en la fórmula, adjuntando las palabras que deseas buscar entre comillas, o bien especificar una celda que contenga el contenido.</li>
+<li><strong>matriz_tabla (requerido):</strong> en este punto, especifica el rango en el que se encuentran los datos. En las funciones de Excel, siempre se utilizan dos puntos como signo para especificar rangos.</li>
+<li><strong>indicador_columnas (requerido):</strong> el indicador de columnas especifica la posición de la columna del valor de retorno dentro de la matriz especificada. Por lo tanto, la columna D no tiene que tener automáticamente el índice 4. Si inicias el área de datos desde la columna B, deberás introducir 3 como indicador de columna.</li>
+<li><strong>intervalo_buscar:</strong> este valor especifica si deseas que BUSCARV encuentre una coincidencia exacta o aproximada. VERDADERO da por sentado que la primera columna está ordenada y busca el valor más próximo. FALSO, al contrario, busca el valor exacto en la primera columna.</li>
+</ul>
+<p>En la práctica, una función BUSCARV se vería de la siguiente manera: <code>=BUSCARV(4,A2:D5,2,0)</code></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc70.png">
+</figure></p>
+<p>Realiza el siguiente ejercicio:</p>
+<p>Copiar la siguiente tabla</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/calc71.png">
+</figure></p>
+<p>Mediante la función Buscarv: </p>
+<p>1.- Al ingresar el código de Destinos en la Celda E2, aparezca en la Celda E4 el precio del Destino</p>
+<p>2.- Al ingresar el código de Transporte en la Celda F2, aparezca en la Celda F4, el precio del Transporte</p>
+<p>3.- Al ingresar el código de Guía en la Celda G2, aparezca en la Celda G4, el precio del Transporte</p>
+<p>4.- Al ingresar el código de Elementos Culturales en la Celda H2, aparezca en la Celda H4, el precio de los Elementos</p>
+<p>5.- En Subtotal debe arrojar la Suma del presupuesto del viaje</p>
+<p>6.- Crear listas (validación de datos) en las celdas de los rangos E2:H2, para que no se permita el ingreso que no sea el código correspondiente.</p>
+<p>7.- En total deberá aparecer el precio final total con un descuento del 5%.</p>
 </details>
 <!-- Competencias específicas / Criterios de evaluación  -->
 
