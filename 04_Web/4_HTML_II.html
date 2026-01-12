@@ -1,0 +1,1593 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introducción a la programación en bloques.">
+      
+      
+        <meta name="author" content="Elena Aznar">
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/04_Web/4_HTML_II.html">
+      
+      
+        <link rel="prev" href="3_HTML_I.html">
+      
+      
+        <link rel="next" href="5_HTML_III.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Introducción a la programación en bloques. - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduccion-a-html" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introducción a la programación en bloques.
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD2: Procesadores de texto y presentaciones
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD2: Procesadores de texto y presentaciones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/8_Presentaciones.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.6- Introducción a Impress
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Documentos/9_PresentacionesII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.7- Presentaciones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD3: Hoja de cálculo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD3: Hoja de cálculo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/3_Calc_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1- Introducción a la hoja de cálculo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/4_Calc_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/5_Calc_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3- Gráficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD4: Programación web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD4: Programación web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_HTML_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1- Introducción a las páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.2- Introducción a HTML
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="4_HTML_II.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.2- Introducción a HTML
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTML
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etiquetas-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etiquetas HTML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reglas-y-normas-html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reglas y normas HTML5
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-basica-de-una-pagina-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura básica de una página web
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura básica de una página web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cabecera-o-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cabecera o header
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuerpo-o-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuerpo o body
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-de-pagina-o-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie de página o footer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pie de página o footer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa44-estructura-de-una-paginas-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.4 Estructura de una páginas web
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos semánticos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elementos semánticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa45-identificacion-elementos-semanticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.5 Identificación elementos semánticos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-metainformacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos metainformación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comentarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comentarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa46-plantilla-metadatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.6 Plantilla metadatos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar47-refuerzo-vf" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.7 Refuerzo V/F
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar48-refuerzo-identificacion-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.8 Refuerzo Identificación visual
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar49-refuerzo-relaciona-columnas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.9 Refuerzo Relaciona columnas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_HTML_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3- Elementos contenido de HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_CSS_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4- Hojas de estilo CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_hosting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5- Publicación de páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--  https://sites.google.com/site/migueltecnologia/3%C2%BA-eso/computaci%C3%B3n-y-rob%C3%B3tica-3/unidad-1-edici%C3%B3n-de-p%C3%A1ginas-web-con-html
+
+https://sites.google.com/site/migueltecnologia/3%C2%BA-eso/computaci%C3%B3n-y-rob%C3%B3tica-3/unidad-1-edici%C3%B3n-de-p%C3%A1ginas-web-con-html?authuser=0
+
+-->
+
+<h1 id="introduccion-a-html"><img alt="icono" src="imagenes/icono_html.png" width="55" /> Introducción a HTML<a class="headerlink" href="#introduccion-a-html" title="Permanent link">&para;</a></h1>
+<p>Una página <em>web</em> no es más que un archivo de texto (que podemos hacer con el mismo bloc de notas) donde, mediante una serie de <strong>elementos de marcado</strong>, configuramos la estructura y el contenido que va a tener dicha página. </p>
+<h2 id="html"><em>HTML</em><a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
+<p>El lenguaje <strong><em>HTML</em></strong> (<em>HyperText Markup Language</em>) es un lenguaje de <strong>hipertexto</strong>, es decir, texto en documentos que permiten enlazar directamente con otros documentos. Fue creado en 1980 para poder transmitir documentos por Internet con las <strong>velocidades</strong> tan <strong>limitadas</strong> de la época, ya que el emisor lo que se transmite son una serie de instrucciones para construir el documento en el ordenador del receptor.</p>
+<p>HTML es el primer lenguaje que una persona debe conocer si desea comenzar a realizar páginas web, ya que es el primero que se utilizó y es la base de los lenguajes de edición actuales. N<strong>o se trata de  un lenguaje de programación</strong> propiamente dicho, aunque a veces se le denomina así coloquialmente.</p>
+<figure style="align: center;">
+    <img src="./imagenes/web4.png">
+    <figcaption>Editor e interpretador</figcaption>
+</figure>
+
+<h3 id="etiquetas-html">Etiquetas <em>HTML</em><a class="headerlink" href="#etiquetas-html" title="Permanent link">&para;</a></h3>
+<p>Una página <em>web</em> se basa en elementos representados por etiquetas, que organizan y presentan contenido, estableciendo la jerarquía y semántica de la información. Todas las etiquetas <em>HTML</em> disponen de los símbolos mayor que <code>&lt;</code> y menor que <code>&gt;</code>, y normalmente se utilizan en parejas. Una al principio (etiqueta de apertura) y otra al final del texto al que afectan etiqueta de cierre. </p>
+<figure style="align: center;">
+    <img src="./imagenes/web9.png">
+    <figcaption>Estructura etiquetas</figcaption>
+</figure>
+
+<h3 id="reglas-y-normas-html5">Reglas y normas <em>HTML5</em><a class="headerlink" href="#reglas-y-normas-html5" title="Permanent link">&para;</a></h3>
+<p>Las principales reglas y normas de <em>HTML5</em> son:</p>
+<ul>
+<li><strong>Estructura Básica:</strong> Todo documento <em>HTML5</em> debe tener una estructura básica que incluya las etiquetas <code>&lt;!DOCTYPE HTML&gt;</code> <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code>. La etiqueta <code>&lt;html&gt;</code> es el elemento raíz y debe contener todas las demás etiquetas.</li>
+<li><strong>Etiquetas en mayúsculas o minúsculas:</strong> Las etiquetas <em>HTML</em> no distinguen entre mayúsculas y minúsculas. Por lo tanto, <code>&lt;html&gt;</code> y <code>&lt;html&gt;</code> son equivalentes. Se recomienda seguir siempre la misma sintaxis, preferiblemente letras en minúsculas.</li>
+<li><strong>Estructura jerárquica:</strong> Gráficamente, los elementos utilizados se pueden representar del siguiente modo:</li>
+</ul>
+<figure style="align: center;">
+    <img src="./imagenes/web8.png">
+    <figcaption>Estructura básica de un documento HTML</figcaption>
+</figure>
+
+<h2 id="estructura-basica-de-una-pagina-web">Estructura básica de una página web<a class="headerlink" href="#estructura-basica-de-una-pagina-web" title="Permanent link">&para;</a></h2>
+<p>La estructura de una página <em>web</em> se refiere a la <strong>organización de los elementos</strong> y contenidos dentro de la página. Esta estructura es fundamental <strong>para garantizar que el contenido sea accesible, legible y fácil de navegar</strong>. </p>
+<p>En la estructura de una página web tenemos tres partes diferenciadas: <strong>cabecera, cuerpo y pie de página</strong>. O, por sus términos en inglés:<strong> header, body y footer</strong>.</p>
+<figure style="align: center;">
+    <img src="./imagenes/web2.png">
+    <figcaption>Estructura básica de una página web</figcaption>
+</figure>
+
+<h3 id="cabecera-o-header">Cabecera o header<a class="headerlink" href="#cabecera-o-header" title="Permanent link">&para;</a></h3>
+<p>La cabecera es la parte superior de la página web. Aquí suele incluirse la información básica de la empresa o marca y es consistente en todo el sitio, es decir, se repite en cada página de la web por la que navegas.</p>
+<p>Los elementos que se incluyen en la cabecera son:</p>
+<ul>
+<li>Logo de la empresa    </li>
+<li>El menú de navegación    </li>
+<li>Un cuadro de búsqueda    </li>
+<li>Una pequeña descripción de la web</li>
+</ul>
+<h3 id="cuerpo-o-body">Cuerpo o body<a class="headerlink" href="#cuerpo-o-body" title="Permanent link">&para;</a></h3>
+<p>Esta es la parte de la web que alberga el contenido principal de tu página. Esta parte sí es diferente en cada página de tu sitio. Es decir, no será el mismo contenido el que incluyes en tu página de contacto que en la página principal.</p>
+<h3 id="pie-de-pagina-o-footer">Pie de página o footer<a class="headerlink" href="#pie-de-pagina-o-footer" title="Permanent link">&para;</a></h3>
+<p>El pie de página o footer es la parte inferior de una página web. Al igual que la cabecera, se repite y es consistente en cada página. En el footer podemos encontrar los siguientes elementos:</p>
+<ul>
+<li>Menú simplificado    </li>
+<li>Información de contacto    </li>
+<li>Botones de redes sociales    </li>
+<li>Logo de la empresa    </li>
+<li>Enlace a la política de privacidad    </li>
+</ul>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa44-estructura-de-una-paginas-web">📝 <strong>AA4.4</strong> Estructura de una páginas web<a class="headerlink" href="#aa44-estructura-de-una-paginas-web" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>¿Qué es la cabecera de una página web y qué suele contener?</li>
+<li>¿Qué es el cuerpo de una página web y qué suele contener?</li>
+<li>¿Qué es el pie de página de una página web y qué suele contener?</li>
+<li>Busca en Internet cada una de las herramientas de desarrollo web vistas e indica el nombre de al menos una de cada tipo.</li>
+<li>Indica los nombres de los principales lenguajes de edición de páginas web.</li>
+</ol>
+</details>
+<h2 id="elementos-semanticos">Elementos semánticos<a class="headerlink" href="#elementos-semanticos" title="Permanent link">&para;</a></h2>
+<p>A la hora de implementar dicha estructura tenemos una relación de <strong>elementos semánticos, o marcados semánticos</strong>, que nos ayudan a definir las distintas divisiones de una página <em>web</em>.</p>
+<p>Los elementos semánticos son:</p>
+<figure style="align: center;">
+    <img src="./imagenes/elementosSemanticos.png" width="520">
+    <figcaption>Elementos semánticos que definen estructura documento HTML5 </figcaption>
+</figure>
+
+<table>
+<thead>
+<tr>
+<th><strong>Elemento</strong></th>
+<th><strong>Descripción</strong></th>
+<th><strong>Ejemplo Periódico digital</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;section&gt;</code></td>
+<td>Define secciones de una <em>web</em> .</td>
+<td>Agrupa contenidos como noticias por temática o ámbito por ejemplo cultura, economía...</td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Especifica una sección que contiene un menú de navegación.</td>
+<td>Enlaces de navegación de la <em>web</em>.</td>
+</tr>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td>Determina secciones de contenido.</td>
+<td>Una noticia perteneciente a un tema o ámbito concreto.</td>
+</tr>
+<tr>
+<td><code>&lt;aside&gt;</code></td>
+<td>Define la barra lateral de una página <em>web</em> donde se incluye información adicional a la principal. </td>
+<td>Relación de links a artículos relacionados con la noticia que se está leyendo.</td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code> <code>&lt;h5&gt;</code> <code>&lt;h6&gt;</code></td>
+<td>Se utilizan para definir los encabezados de diferentes niveles, donde <code>&lt;h1&gt;</code> es el más importante y <code>&lt;h6&gt;</code> el menos.</td>
+<td>Suele emplearse para los títulos.</td>
+</tr>
+<tr>
+<td><code>&lt;header&gt;</code></td>
+<td>Determina la cabecera de una <em>web</em> o de un elemento.</td>
+<td>Título del periódico donde se visualiza el logo y además podría servir para contener el título de las secciones.</td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>Define el pie de página. También se puede utilizar para definir el pie de otros elementos.</td>
+<td>Pie de página del periódico indicando contacto, redes sociales. También podría delimitar el pie de cada sección del periódico.</td>
+</tr>
+<tr>
+<td><code>&lt;address&gt;</code></td>
+<td>Especifica una sección que contiene información de contacto.</td>
+<td>Suele contener e-mail, teléfono, redes sociales...</td>
+</tr>
+<tr>
+<td><code>&lt;main&gt;</code></td>
+<td>Determina el contenido principal del documento. Indica la parte principal del documento (sin tener en cuenta <code>header</code> o <code>footer</code>)</td>
+<td>Solo puede existir un elemento <code>&lt;main&gt;</code> en el documento.</td>
+</tr>
+</tbody>
+</table>
+<details class="note" open="open">
+<summary>Etiquetas unitarias</summary>
+<p>Las etiquetas <code>&lt;body&gt;</code> <code>&lt;h1&gt;</code> y <code>&lt;main&gt;</code> solo se pueden utilizar una vez por documento <em>HTML</em>, el resto de etiquetas de contenido se pueden usar siempre que sea necesario.</p>
+</details>
+<details class="note" open="open">
+<summary><code>&lt;main&gt;</code> vs <code>&lt;body&gt;</code></summary>
+<ul>
+<li>Las etiquetas <code>&lt;body&gt;</code>  Define el contenido completo del documento <em>HTML</em>. Todo lo que aparece visible en la página <em>web</em> (texto, imágenes, tablas, formularios, etc.) debe estar dentro de esta etiqueta.</li>
+<li>La etiqueta <code>&lt;main&gt;</code>  Representa el contenido principal de la página <em>HTML</em>. No incluye elementos repetitivos como encabezados, menús o pie de página.Solo puede haber un <code>&lt;main&gt;</code> por página</li>
+</ul>
+</details>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><strong>index.html</strong></label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a1 1 0 0 1-.006.083l-.005.028-.011.053-.01.031-.017.047-.014.03-.021.043-.019.03a.6.6 0 0 1-.08.1l-.026.025-.036.03-.029.022-.01.008-6.782 4.522a.64.64 0 0 1-.708 0L4.864 14.79l-.01-.008a1 1 0 0 1-.065-.052l-.026-.025-.032-.034-.021-.028a.6.6 0 0 1-.067-.11l-.014-.031-.017-.047-.01-.03q-.006-.027-.01-.054l-.006-.028a1 1 0 0 1-.006-.083V9.739a1 1 0 0 1 .006-.083l.005-.027.011-.054.01-.03a.6.6 0 0 1 .12-.217l.031-.034.026-.025a1 1 0 0 1 .065-.052l.01-.008 6.782-4.521a.64.64 0 0 1 .708 0l6.782 4.521.01.008.03.022.035.03q.014.012.026.025a.6.6 0 0 1 .08.1l.019.03.021.043.014.03q.01.024.017.047l.01.031q.006.027.01.054l.006.027a1 1 0 0 1 .006.083zM12 0C5.373 0 0 5.372 0 12c0 6.627 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356 4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"/></svg></span> Ejemplo en <em>CodePen</em></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure style="float: right;">
+    <img src="./imagenes/imagen_estructura.png" width="420">
+    <figcaption>Visualización estructura</figcaption>
+</figure>
+<div class="highlight"><span class="filename">esquema básico página _web_</span><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>  
+<span class="linenos" data-linenos=" 3 "></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>    
+<span class="linenos" data-linenos=" 4 "></span>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Título de la _web_  <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>    
+<span class="linenos" data-linenos=" 5 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;title&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Título de la _web_ &quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> 
+<span class="linenos" data-linenos=" 8 "></span>        <span class="na">content</span><span class="o">=</span><span class="s">&quot;Descripción de la _web_ &quot;</span><span class="p">&gt;</span>    
+<span class="linenos" data-linenos=" 9 "></span>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;estilos.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="w">        </span><span class="nt">header</span><span class="p">{</span><span class="k">background-color</span><span class="p">:</span><span class="kc">yellow</span><span class="p">;}</span><span class="c">/* Código _CSS_ */</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span> 
+<span class="linenos" data-linenos="13 "></span>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>  
+<span class="linenos" data-linenos="14 "></span>    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/JavaScript&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="15 "></span><span class="w">        </span><span class="cm">/* Código JS */</span>
+<span class="linenos" data-linenos="16 "></span><span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
+<span class="linenos" data-linenos="17 "></span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>  
+<span class="linenos" data-linenos="18 "></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>    
+<span class="linenos" data-linenos="19 "></span>    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="20 "></span>        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Título de la _web_<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>      
+<span class="linenos" data-linenos="21 "></span>    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>    
+<span class="linenos" data-linenos="22 "></span>    <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="23 "></span>        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="24 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="25 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Servicios<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="26 "></span>            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Contacto<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="27 "></span>    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="28 "></span>    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="29 "></span>    <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>      
+<span class="linenos" data-linenos="30 "></span>        <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="31 "></span>            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>CONTENIDO PRINCIPAL<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="32 "></span>            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es el contenido principal de mi _web_ .<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>      
+<span class="linenos" data-linenos="33 "></span>        <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>      
+<span class="linenos" data-linenos="34 "></span>    <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="35 "></span>    <span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="36 "></span>        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Testimonios<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="37 "></span>        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Me gusta mucho esta página.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="38 "></span>    <span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="39 "></span>    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="40 "></span>        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Redes sociales<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="41 "></span>        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Facebook<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="42 "></span>        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Tiwtter<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="43 "></span>    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="44 "></span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>  
+<span class="linenos" data-linenos="45 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<p><p class="codepen" data-height="400" data-default-tab="result" data-slug-hash="eYoLOyK" data-user="aznarel" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<span>See the Pen <a href="https://codepen.io/aznarel/pen/eYoLOyK">
+Untitled</a> by Elena (<a href="https://codepen.io/aznarel">@aznarel</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script></p>
+</div>
+</div>
+</div>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa45-identificacion-elementos-semanticos">📝 <strong>AA4.5</strong> Identificación elementos semánticos<a class="headerlink" href="#aa45-identificacion-elementos-semanticos" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Identifica en la siguiente imagen los elementos semánticos empleados para la estructura de la <em>web</em> .</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/IdentificarSemantica.png">
+    <figcaption>Imagen 1 </figcaption>
+</figure>
+<figure style="align: center;">
+    <img src="./imagenes/IdentificarSemantica3.png" >
+    <figcaption>Imagen 2 </figcaption>
+</figure></p>
+<details class="success">
+<summary>Solución</summary>
+<p><img alt="IdentificarSemantica2" src="imagenes/IdentificarSemantica2.png" width="420" /> 
+  <img alt="IdentificarSemantica4" src="imagenes/IdentificarSemantica4.png" width="420" /> </p>
+</details>
+</details>
+<h2 id="elementos-metainformacion">Elementos metainformación<a class="headerlink" href="#elementos-metainformacion" title="Permanent link">&para;</a></h2>
+<p>La <strong>metainformación en <em>HTML</em></strong> se utiliza para <strong>proporcionar información adicional</strong> sobre un documento <em>HTML</em>.</p>
+<p>Esta información <strong>no se muestra directamente en la página <em>web</em> </strong>, pero puede ser utilizada por los motores de búsqueda, los navegadores y otros sistemas para entender y clasificar el contenido del documento.</p>
+<p>Estas etiquetas se colocan entre las etiquetas <code>&lt;head&gt;</code> y <code>&lt;/head&gt;</code>. Es importante tener en cuenta que las <em>metatags</em> pueden variar dependiendo de las necesidades y estándares específicos de cada sitio <em>web</em>.</p>
+<p>Algunas de las etiquetas más comunes para la metainformación en <em>HTML</em> son:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Define el título del documento, que se muestra en la barra de título del navegador y en los resultados de búsqueda.   <br><img alt="alt text" src="imagenes/web7.png" /></td>
+</tr>
+<tr>
+<td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+<td>Especifica la codificación de caracteres utilizada en el documento. UTF-8 es la codificación más comúnmente utilizada para admitir caracteres multilingües.</td>
+</tr>
+<tr>
+<td><code>&lt;meta name="description" content="Descripción del sitio"&gt;</code></td>
+<td>Proporciona una breve descripción del contenido del sitio <em>web</em> . Es utilizado por los motores de búsqueda para mostrar información sobre el sitio en los resultados de búsqueda.</td>
+</tr>
+<tr>
+<td><code>&lt;meta name="keywords" content="palabra clave1, palabra clave2"&gt;</code></td>
+<td>Especifica palabras clave relacionadas con el contenido del sitio <em>web</em> . Aunque no es tan relevante para los motores de búsqueda modernos, aún puede ser utilizado para conocer la temática del sitio <em>web</em>.</td>
+</tr>
+<tr>
+<td><code>&lt;meta name="author" content="Nombre del autor"&gt;</code></td>
+<td>Especifica el nombre del autor del documento.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><span class="filename">index.html</span><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="cp">&lt;!DOCTYPE html&gt;</span> <span class="cm">&lt;!-- (9) --&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!-- (10) --&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span><span class="cm">&lt;!-- (11) --&gt;</span>
+<span class="hll"><span class="linenos" data-linenos=" 4 "></span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>   <span class="cm">&lt;!-- (1) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos=" 5 "></span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Descripción del sitio&quot;</span><span class="p">&gt;</span> <span class="cm">&lt;!-- (2) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos=" 6 "></span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;palabra clave1, palabra clave2&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!-- (3) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos=" 7 "></span>  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;author&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Nombre del autor&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!-- (5) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos=" 8 "></span>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Metainformación del Sitio<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span><span class="cm">&lt;!-- (8) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos=" 9 "></span><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos="10 "></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span><span class="cm">&lt;!-- (12) --&gt;</span>
+</span><span class="hll"><span class="linenos" data-linenos="11 "></span>  <span class="cm">&lt;!-- Contenido del sitio _web_ --&gt;</span>
+</span><span class="linenos" data-linenos="12 "></span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="13 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<ol>
+<li>Especifica la codificación de caracteres utilizada en el documento.</li>
+<li>Descripción del sitio</li>
+<li>Especifica palabras clave relacionadas con el contenido</li>
+<li>Nombre del autor del documento.</li>
+<li>Indica los derechos de autor</li>
+<li>Título del documento</li>
+<li><code>doctype</code> sirve para indicar al navegador qué tipo de documento está viendo y qué versión específica del lenguaje se está empleando.</li>
+<li>La etiqueta <code>&lt;html&gt;</code> representa la raíz de un documento <em>HTML</em> y contiene todos los demás elementos <em>HTML</em> (excepto la etiqueta &lt;!DOCTYPE&gt;).</li>
+<li>Cabecera del documento <em>web</em>.</li>
+<li>Cuerpo del documento <em>web</em>.</li>
+</ol>
+<h2 id="comentarios">Comentarios<a class="headerlink" href="#comentarios" title="Permanent link">&para;</a></h2>
+<p>Los comentarios en <em>HTML</em> son anotaciones en el código, que no se muestran en el navegador y sirven para la comprensión y mantenimiento del código.</p>
+<p>Los comentarios en <em>HTML</em> se encierran entre las etiquetas <code>&lt;!--</code> y <code>--&gt;</code></p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="cm">&lt;!-- Esto es un comentario dentro de un documento _HTML_ --&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="cm">&lt;!--</span>
+<span class="linenos" data-linenos=" 3 "></span><span class="cm"> /$$   /$$ /$$$$$$$$ /$$      /$$ /$$      </span>
+<span class="linenos" data-linenos=" 4 "></span><span class="cm">| $$  | $$|__  $$__/| $$$    /$$$| $$      </span>
+<span class="linenos" data-linenos=" 5 "></span><span class="cm">| $$  | $$   | $$   | $$$$  /$$$$| $$      </span>
+<span class="linenos" data-linenos=" 6 "></span><span class="cm">| $$$$$$$$   | $$   | $$ $$/$$ $$| $$      </span>
+<span class="linenos" data-linenos=" 7 "></span><span class="cm">| $$__  $$   | $$   | $$  $$$| $$| $$      </span>
+<span class="linenos" data-linenos=" 8 "></span><span class="cm">| $$  | $$   | $$   | $$\  $ | $$| $$      </span>
+<span class="linenos" data-linenos=" 9 "></span><span class="cm">| $$  | $$   | $$   | $$ \/  | $$| $$$$$$$$</span>
+<span class="linenos" data-linenos="10 "></span><span class="cm">|__/  |__/   |__/   |__/     |__/|________/</span>
+<span class="linenos" data-linenos="11 "></span><span class="cm"> --&gt;</span>                                         
+<span class="linenos" data-linenos="12 "></span><span class="cm">&lt;!--¿Te están entrando ganas de hacer ASCII Art?  --&gt;</span>
+</code></pre></div>
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa46-plantilla-metadatos">📝 <strong>AA4.6</strong> Plantilla metadatos<a class="headerlink" href="#aa46-plantilla-metadatos" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Crea un nuevo documento <em>HTML</em>, y llámalo <code>plantillaMetadatos.html</code>. Dentro, añade una estructura básica de las etiquetas <em>HTML</em> para que el documento tenga lo siguiente:</p>
+<ul>
+<li>Un comentario al principio del documento con tu nombre</li>
+<li>Un título que sea “Mi primera página <em>HTML</em>”</li>
+<li>Un juego de caracteres ISO-8859-1 o UTF-8.</li>
+<li>Información sobre el autor.</li>
+<li>Configurar el área visible de la página <em>web</em> para que se visualice correctamente en otros dispositivos.</li>
+<li>Un párrafo (en el body) con tu nombre.</li>
+</ul>
+<p>Guarda la página y prueba a abrirla con un navegador para comprobar que se ve correctamente (incluyendo los acentos que pueda haber).</p>
+</details>
+<details class="question">
+<summary>Actividad Refuerzo</summary>
+<h4 id="aar47-refuerzo-vf">🔨 <strong>AAR4.7</strong> Refuerzo V/F<a class="headerlink" href="#aar47-refuerzo-vf" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Indica si las siguientes afirmaciones son verdaderas o falsas y corrige las falsas:</p>
+<ol>
+<li>HTML es un lenguaje de programación.</li>
+<li>La etiqueta <code>&lt;main&gt;</code> puede aparecer varias veces en un documento.</li>
+<li>La metainformación se coloca dentro de <code>&lt;body&gt;</code>.</li>
+<li><code>&lt;header&gt;</code> solo puede usarse una vez en una página.</li>
+<li><code>&lt;img&gt;</code> es una etiqueta unitaria.</li>
+<li>El contenido visible de una web va dentro de <code>&lt;body&gt;</code>.</li>
+</ol>
+<details class="success">
+<summary>Solución</summary>
+<ol>
+<li>HTML es un lenguaje de programación.❌ FALSO → HTML es un lenguaje de marcado, no de programación.</li>
+<li>La etiqueta <code>&lt;main&gt;</code> puede aparecer varias veces en un documento. ❌ FALSO → Solo puede existir un <code>&lt;main&gt;</code> por documento HTML.</li>
+<li>La metainformación se coloca dentro de <code>&lt;body&gt;</code>. ❌ FALSO → La metainformación va dentro de <code>&lt;head&gt;</code>.</li>
+<li><code>&lt;header&gt;</code> solo puede usarse una vez en una página. ❌ FALSO → Puede usarse varias veces (por ejemplo, en una sección o artículo).</li>
+<li><code>&lt;img&gt;</code> es una etiqueta unitaria. ✅ VERDADERO</li>
+<li>El contenido visible de una web va dentro de <code>&lt;body&gt;</code>. ✅ VERDADERO</li>
+</ol>
+</details>
+</details>
+<details class="question">
+<summary>Actividad Refuerzo</summary>
+<h4 id="aar48-refuerzo-identificacion-visual">🔨 <strong>AAR4.8</strong> Refuerzo Identificación visual<a class="headerlink" href="#aar48-refuerzo-identificacion-visual" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Entrega una captura de una página web real (noticia, tienda online, blog…) y pide que identifiquen:</p>
+<ul>
+<li>Header</li>
+<li>Nav</li>
+<li>Main</li>
+<li>Article</li>
+<li>Aside</li>
+<li>Footer</li>
+</ul>
+<details class="success">
+<summary>Solución</summary>
+<p>(La respuesta depende de la web elegida, pero debe identificarse algo equivalente a:)</p>
+<ul>
+<li>Header → Parte superior con logo, nombre de la web o título principal.</li>
+<li>Nav → Menú de navegación con enlaces (Inicio, Contacto, Noticias…).</li>
+<li>Main → Zona central con el contenido principal.</li>
+<li>Article → Cada noticia, entrada o bloque de contenido independiente.</li>
+<li>Aside → Barra lateral con información adicional o enlaces relacionados.</li>
+<li>Footer → Parte inferior con contacto, redes sociales, copyright, etc.</li>
+</ul>
+<p>✔️ Se considerará correcta si los elementos están bien justificados, aunque el diseño visual sea distinto.</p>
+</details>
+</details>
+<details class="question">
+<summary>Actividad Refuerzo</summary>
+<h4 id="aar49-refuerzo-relaciona-columnas">🔨 <strong>AAR4.9</strong> Refuerzo Relaciona columnas<a class="headerlink" href="#aar49-refuerzo-relaciona-columnas" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Programar aplicaciones sencillas multiplataforma de manera creativa, de forma individual o colectiva, respetando los derechos de autoría y licencias de uso.">CE2.4</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Relaciona cada etiqueta con su función:</p>
+<table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;meta charset&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<details class="success">
+<summary>Solución</summary>
+<table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;meta charset&gt;</code></td>
+<td>Indica la <strong>codificación de caracteres</strong> del documento</td>
+</tr>
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Define un <strong>menú de navegación</strong></td>
+</tr>
+<tr>
+<td><code>&lt;article&gt;</code></td>
+<td>Representa un <strong>contenido independiente</strong> (noticia, entrada…)</td>
+</tr>
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>Define el <strong>pie de página</strong></td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Define el <strong>título del documento</strong> que aparece en el navegador</td>
+</tr>
+</tbody>
+</table>
+</details>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li><em>Blog</em> <a href="https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf">Cheatsheet <em>HTML</em></a></li>
+<li><em>Mdn WebDocs</em> <a href="https://developer.mozilla.org/es/docs/Learn/HTML"><em>HTML</em></a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="3_HTML_I.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.1- Introducción a las páginas web">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                4.1- Introducción a las páginas web
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="5_HTML_III.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 4.3- Elementos contenido de HTML5">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                4.3- Elementos contenido de HTML5
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
