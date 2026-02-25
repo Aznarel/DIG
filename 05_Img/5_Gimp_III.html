@@ -1,0 +1,1160 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Edición de imágenes con GIMP">
+      
+      
+        <meta name="author" content="Elena Aznar">
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/05_Img/5_Gimp_III.html">
+      
+      
+        <link rel="prev" href="4_Gimp_II.html">
+      
+      
+        <link rel="next" href="6_Gimp_IV.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Edición de imágenes con GIMP - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#retoques-fotograficos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Edición de imágenes con GIMP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD4: Programación web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD4: Programación web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/3_HTML_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1- Introducción a las páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/4_HTML_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2- Introducción a HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/5_HTML_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3- Elementos contenido de HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/6_CSS_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4- Hojas de estilo CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/7_hosting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5- Publicación de páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD5: Retoque de imágenes, vídeo y audio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD5: Retoque de imágenes, vídeo y audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Gimp.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.1- Introducción a GIMP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_Gimp_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5.3- Retoques fotográficos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="5_Gimp_III.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5.3- Retoques fotográficos
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aa55-alisado" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA5.5 Alisado
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aar56-la-figura-humana" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR5.6 La figura humana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_Gimp_IV.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4- Herramienta de silueteado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_Gimp_V.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.5- Clonar y borrar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="8_Gimp_VI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.7- Crear un GIF animado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--  http://www.ite.educacion.es/formacion/materiales/86/cd/m12/el_color_en_gimp.html
+
+https://lopegonzalez.es/eso-y-bachillerato/digitalizacion-4o-eso/tema-3-edicion-y-creacion-de-contenido/practicas-con-gimp/
+-->
+
+<h1 id="retoques-fotograficos"><img alt="icono" src="imagenes/icono_gimp.png" width="55" /> Retoques fotográficos<a class="headerlink" href="#retoques-fotograficos" title="Permanent link">&para;</a></h1>
+<p>Desde los inicios de la fotografía, la figura humana ha sido uno de los temas más habituales. Siempre ha existido interés por mejorar el aspecto de las personas en las imágenes, pero con la llegada de la fotografía digital este proceso se ha vuelto mucho más sencillo y accesible.</p>
+<p>Hoy en día estamos acostumbrados a ver fotografías retocadas en los medios de comunicación, especialmente de personas famosas. Estos retoques se utilizan para corregir imperfecciones, mejorar la iluminación o resaltar determinados rasgos. También en el ámbito de la política se emplea el retoque fotográfico para proyectar una imagen cuidada y profesional de los líderes públicos.</p>
+<p>En este bloque aprenderemos a utilizar herramientas básicas de edición para mejorar fotografías de forma responsable, entendiendo tanto su utilidad como su impacto.</p>
+<figure style="align: center;">
+    <img src="./imagenes/politico.png">
+    <figcaption>Antes y después</figcaption>
+</figure>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa55-alisado">📝 <strong>AA5.5</strong> Alisado<a class="headerlink" href="#aa55-alisado" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>El objetivo de esta práctica es aprender a suavizar las imperfecciones de la piel como arrugas o manchas por medio de la técnica del desenfoque blando</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp56.png">
+    <figcaption>Ejemplo Alisado</figcaption>
+</figure></p>
+<ol>
+<li>
+<p>Buscar recursos</p>
+<p>Busca en Internet y descarga una foto en que salga centrada y en primer plano la cara de un personaje conocido que tenga arrugas acentuadas.</p>
+</li>
+<li>
+<p>Abrir la imagen</p>
+<p>Abre el programa y desde el programa abre la imagen que has descargado usando el menú <strong>Archivo &gt; Abrir</strong>. Busca en tu ordenador la imagen, selecciónala y pulsa en Abrir.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp57.png">
+    <figcaption>Abrir imagen</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Duplicar capa</p>
+<p>Ahora necesitamos duplicar la capa en la que está la imagen. Sobre la capa de la imagen pulsamos con el botón derecho del ratón y seleccionamos Duplicar la capa:</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp58.png">
+    <figcaption>Duplicasr</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Renombrar capas</p>
+<p>Una vez que tengamos las dos capas, las vamos a renombrar. Para ello puedes hacer doble clic sobre el nombre de la capa. A la de arriba la llamaremos original y a la de abajo la llamaremos borrosa:</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp59.png">
+    <figcaption>Renombrar</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Ocultar capa</p>
+<p>Ahora vamos a ocultar la capa original (pulsando sobre el ojo) y seleccionar la capa borrosa:</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp60.png">
+    <figcaption>Ocultar capa</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Desenfocar capa</p>
+<p>Seguidamente necesitamos desenfocar la capa borrosa. Pulsamos una vez sobre la capa borrosa y abrimos <strong>Filtros &gt; Difuminar &gt; Desenfoque gaussiano</strong>. Y en la ventana que sale ponemos un tamaño de 8 en las dos cajas, para aplicar el desenfoque (ten en cuenta que dependiendo de la imagen que hayamos elegido, el tamaño de desenfoque será mayor o menor), y pulsamos en <strong>Aceptar</strong>.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp61.png">
+    <figcaption>Desenfocar capa</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Máscara de capa</p>
+<p>Ahora vamos a hacer varias cosas. Primero volvemos a poner visible la capa original. Luego pulsamos con el botón derecho del ratón sobre la capa original y clicamos en <strong>Añadir máscara de capa</strong> (en la ventana que sale, directamente pulsamos en Aceptar).</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp62.png">
+    <figcaption>Máscara de capa</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Seleccionar pincel</p>
+<p>En la capa original, de los dos cuadrados pinchamos sobre el de la derecha (el blanco). Ahora seleccionamos la herramienta Pincel y <strong>seleccionamos el pincel llamado Smoke</strong> (el que está a la izquierda del sol).</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp63.png">
+    <figcaption>Seleccionar pincel</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Configurar pincel</p>
+<p>Modificamos la caja <strong>Tamaño</strong> hasta tener un tamaño que nos venga bien (en mi caso entre 50 y 60) y una dureza media (de entre 40 y 50). Y ahora sólo tendremos que ir pasando el pincel por aquellos sitios que tengan más arrugas y verás cómo se van alisando (compara la parte izquierda y la parte derecha de esta imagen). Lo que realmente está haciendo esta técnica es ir borrando suavemente la capa que está arriba, de manera que aparece la misma parte de la imagen de abajo -que está desenfocada-. <em>Para obtener un resultado aceptable debes jugar con dos elementos: el desenfoque de la imagen de abajo, y la dureza del pincel con el que estás borrando la de arriba.</em></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp64.png">
+    <figcaption>Configurar pincel</figcaption>
+</figure></p>
+<p>Debes tener en cuenta que para acceder a sitios de la cara más escondidos debes reducir el tamaño del pincel, o el resultado no será realista.</p>
+</li>
+<li>
+<p>Exportar resultado</p>
+<p>Cuando hayas terminado exporta la imagen como .jpg.</p>
+</li>
+<li>
+<p>Cerrar el programa.</p>
+</li>
+</ol>
+<p><strong>ACTIVIDAD</strong></p>
+<ul>
+<li>Debes hacer este mismo proceso para dos imágenes de personajes conocidos o desconocidos que consideres.</li>
+<li>Al finalizar el trabajo debes tener 4 imágenes: las 2 originales que has elegido y las dos que son el resultado de tu trabajo.</li>
+<li>Sube captura de pantalla del antes y después de las imágenes a Aules.</li>
+</ul>
+</details>
+<details class="question">
+<summary>Actividad Refuerzo</summary>
+<h4 id="aar56-la-figura-humana">🔨 <strong>AAR5.6</strong> La figura humana<a class="headerlink" href="#aar56-la-figura-humana" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>La figura humana I</p>
+<p>Las prácticas de este apartado con la dedicada a quitar las arrugas de un rostro. Puedes ayudarte del siguiente <a href="resources/video27.mp4">vídeo</a></p>
+<ol>
+<li>Abre la fotografía <a href="resources/quitar_arrugas.jpg">quitar_arrugas.jpg</a>.<br />
+2.Duplicamos la capa Fondo. </li>
+<li>Herramienta de saneado (la tirita). </li>
+<li>Seleccionamos el pincel Circle Fuzzy (es un pincel blando), Escala de 1,00. </li>
+<li>Manteniendo apretada la tecla CONTROL del teclado, hacemos clic en una zona limpia de arrugas, pero cerca de una de ellas. </li>
+<li>Soltamos la tecla CONTROL, y vamos haciendo varios clics encima de la arrugas y ojeras de un ojo. </li>
+<li>Repetimos la operación en todas las zonas con arrugas de la cara (el otro ojo, frente, boca, cuello), hasta que esté "limpia" de arrugas. </li>
+<li>Si es necesario, bajamos la escala del pincel para quitar las arrugas de las zonas más pequeñas. </li>
+<li>Si no queremos que desaparezcan del todo las arrugas, y dejar la cara más natural (con ligeras arrugas de expresión), bajamos la opacidad de la capa Copia hasta conseguir el efecto deseado. </li>
+<li>Combinamos las capas visibles. </li>
+<li>Guardamos proyecto. </li>
+<li>Exportamos resultado en pdf.</li>
+</ol>
+</li>
+<li>
+<p>La figura humana II</p>
+<p>Seguimos mejorando el retrato de la práctica anterior. Ahora vamos a cambiar el color de los ojos. Puedes ayudarte del siguiente <a href="./resources/video32.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen corregida de "quitar_arrugas_corregida.jpg" obtenida en la práctica anterior. </li>
+<li>Creamos una capa nueva, transparencia. </li>
+<li>Herramienta de selección elíptica. </li>
+<li>Hacemos clic en un ojo, y arrastramos el ratón hasta cubrir una pupila. </li>
+<li>Para realizar un ajuste perfecto, podemos estirar de los cuadrados de las esquinas hasta encajar la selección a la pupila del ojo. </li>
+<li>Hacemos clic en Añadir a la selección. </li>
+<li>Repetimos los pasos anteriores en el otro ojo. </li>
+<li>Seleccionamos el color frontal que queramos para cambiar el color de los ojos (por ejemplo, un verde o un azul). </li>
+<li>Herramienta bote de pintura. </li>
+<li>Hacemos clic dentro de la selección de la pupila. </li>
+<li>Modo de fusión Solapar. </li>
+<li>Quitamos la selección. </li>
+<li>Bajamos la opacidad de la capa nueva. </li>
+<li>Combinamos las capas. </li>
+<li>Guardamos como. </li>
+</ol>
+</li>
+<li>
+<p>La figura humana III</p>
+<p>Vamos a quitar de golpe todas las manchas e imperfecciones de la piel de nuestro retrato (tratamiento de lifting digital). Puedes ayudarte del siguiente <a href="./resources/video33.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen del cambio de color de ojos de la práctica anterior. </li>
+<li>Duplicamos la capa. </li>
+<li>Desmarcamos el ojo de la capa Fondo. </li>
+<li>Seleccionamos la herramienta de goma de borrar, pincel Circle Fuzzy, escala de 4. </li>
+<li>Borramos todo lo que no sea la piel de la modelo (fondo, pelo). </li>
+<li>Reducimos la escala del pincel para borrar bien los bordes. </li>
+<li>Reducimos más la escala y borramos las cejas, ojos, boca y las zonas con un cambio de color en la piel de la modelo. </li>
+<li>Filtros &gt; Desenfoque &gt; Desenfoque gaussiano. </li>
+<li>Aplicamos un Radio de desenfoque de 5 (tanto en Horizontal como en Vertical). Aceptar. </li>
+<li>Hacemos visible la capa Fondo (marcamos su ojo). </li>
+<li>Combinamos las capas. </li>
+<li>Guardamos como.</li>
+</ol>
+</li>
+<li>
+<p>La figura humana IV</p>
+<p>Para finalizar, vamos a aplicar un maquillaje a la fotografía de un retrato digital. Puedes ayudarte del siguiente <a href="./resources/video34.mp4">vídeo</a></p>
+<ol>
+<li>Abrimos la imagen anterior del lifting digital. </li>
+<li>Creamos una capa nueva transparente. </li>
+<li>Herramienta pincel, Circle fuzzy, escala 1. </li>
+<li>Elegimos un color de frente (por ejemplo, rosa, azul, verde...) </li>
+<li>Pintamos encima de los dos ojos. </li>
+<li>Si nos salimos, borramos con la goma de borrar. </li>
+<li>Modo de fusión solapar. </li>
+<li>Bajamos la opacidad de la capa. </li>
+<li>Creamos otra capa transparente. </li>
+<li>Volvemos a seleccionar el pincel, y pintamos las mejillas de "colorete". </li>
+<li>Modo de fusión solapar, y bajamos la opacidad a gusto. </li>
+<li>Seleccionamos un color frontal rojo. </li>
+<li>Reducimos la escala del pincel. </li>
+<li>Creamos otra capa transparente. </li>
+<li>Pintamos los labios. </li>
+<li>Borramos si nos salimos del contorno de los labios. </li>
+<li>Modo de fusión solapar, bajamos la opacidad de la capa. </li>
+<li>Guardamos la imagen en formato .xcf, de esa manera se guardan todas las capas y, si en un futuro queremos modificar el color de una de las capas, la tenemos disponible y no tenemos que empezar todo desde el principio. Después, podemos combinar las capas visibles y guardar la imagen en formato .jpg, para poder visionarla en nuestro ordenador 
+sin necesidad de abrir el GIMP. </li>
+<li>Enviamos la imagen. </li>
+</ol>
+</li>
+<li>
+<p>La figura humana IV
+    Realiza el proceso anterior con la foto <a href="resources/Bel%C3%A9n.jpeg">Belén.jpg</a>.</p>
+</li>
+</ol>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guía <a href="https://docs.gimp.org/es/">Gimp 2.10</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="4_Gimp_II.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 5.2- Operaciones básicas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                5.2- Operaciones básicas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="6_Gimp_IV.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5.4- Herramienta de silueteado">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                5.4- Herramienta de silueteado
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
