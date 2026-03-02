@@ -1,0 +1,1430 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Edición de imágenes con GIMP">
+      
+      
+        <meta name="author" content="Elena Aznar">
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/DIG/05_Img/3_Gimp.html">
+      
+      
+        <link rel="prev" href="../04_Web/7_hosting.html">
+      
+      
+        <link rel="next" href="4_Gimp_II.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Edición de imágenes con GIMP - Digitalización</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#edicion-de-imagenes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Digitalización" class="md-header__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalización
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Edición de imágenes con GIMP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Digitalización" class="md-nav__button md-logo" aria-label="Digitalización" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Digitalización
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Contenidos digitales
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Contenidos digitales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD3: Hoja de cálculo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            UD3: Hoja de cálculo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/3_Calc_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1- Introducción a la hoja de cálculo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/4_Calc_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_Calc/5_Calc_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3- Gráficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD4: Programación web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            UD4: Programación web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/3_HTML_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1- Introducción a las páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/4_HTML_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2- Introducción a HTML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/5_HTML_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3- Elementos contenido de HTML5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/6_CSS_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4- Hojas de estilo CSS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Web/7_hosting.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5- Publicación de páginas web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    UD5: Retoque de imágenes, vídeo y audio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            UD5: Retoque de imágenes, vídeo y audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5.1- Introducción a GIMP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="3_Gimp.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5.1- Introducción a GIMP
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#imagenes-digitales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imágenes digitales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatos-de-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos de imágenes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calidad-de-una-imagen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calidad de una imagen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tratamiento-de-imagenes-con-gimp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tratamiento de imágenes con GIMP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos-con-gimp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeros pasos con Gimp
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primeros pasos con Gimp">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa51-escalar-una-imagen-modificarla-y-exportarla" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA5.1 Escalar una imagen, modificarla y exportarla
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_Gimp_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.2- Operaciones básicas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_Gimp_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.3- Retoques fotográficos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_Gimp_IV.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.4- Herramienta de silueteado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--  
+http://www.ite.educacion.es/formacion/materiales/86/cd/indice.htm
+
+http://www.ite.educacion.es/formacion/materiales/86/cd/m3/prctica_guiada_1.html
+
+http://www.ite.educacion.es/formacion/materiales/86/cd/m12/anlisis_y_modificacin_de_color.html
+
+http://www.ite.educacion.es/formacion/materiales/86/cd/m4/prctica_guiada_2.html
+
+http://www.ite.educacion.es/formacion/materiales/86/cd/m5/prctica_guiada.html
+
+http://www.ite.educacion.es/formacion/materiales/86/cd/m14/actividades.html
+
+https://lopegonzalez.es/eso-y-bachillerato/digitalizacion-4o-eso/tema-3-edicion-y-creacion-de-contenido/practicas-con-gimp/
+
+-->
+
+<h1 id="edicion-de-imagenes"><img alt="icono" src="imagenes/icono_gimp.png" width="55" /> Edición de imágenes<a class="headerlink" href="#edicion-de-imagenes" title="Permanent link">&para;</a></h1>
+<div style="background-color:#fff3cd; display:flex; justify-content:space-between; align-items:center; padding:20px; border-radius:8px;">
+
+  <div style= color:#444; font-size:18px; font-family:'Comic Sans MS', cursive, sans-serif;">
+    <ul>
+        <li>¿Qué es diseño multimedia?</li>
+        <li>¿Para qué sirven?</li>
+   </ul>
+
+    <p> Presentar la información de forma clara y visual mediante el uso de imágenes, crear collages o adaptar gráficos ayuda a que nuestros trabajos sean más comprensibles y atractivos.</p>
+    <p>En este apartado aprenderemos a editar imágenes de <b>mapa de bits</b> con <b>GIMP</b>.</p>
+  </div>
+</div>
+
+<h2 id="imagenes-digitales">Imágenes digitales<a class="headerlink" href="#imagenes-digitales" title="Permanent link">&para;</a></h2>
+<p>Básicamente hay dos tipos de imágenes digitales, cada una de las cuales presenta características particulares, que la hacen adecuada para distintos fines:</p>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
+
+  <div style="border:1px solid #ddd; border-radius:8px; padding:12px;">
+    <div style="background-color:#cce5ff; color:#004085; font-weight:bold; padding:6px; border-radius:6px;">
+      Imágenes de mapa de bits
+    </div>
+    <ul>
+      <li>Están formadas por <b>píxeles</b> (puntos de color) que, en su conjunto, definen la imagen final.</li>
+      <li>Cada uno de estos puntos tiene un color, un brillo, un contraste, etc. determinados.</li>
+      <li>Cuantos más píxeles, mayor <b>calidad</b> y tamaño del archivo.</li>
+      <li>Al ampliarlas, <b>pierden calidad</b>.</li>
+      <li>Se usan en <b>fotografías</b> y la mayoría de imágenes de Internet.</li>
+      <li>Ejemplos de formatos: <b>JPG, PNG, GIF, BMP</b>.</li>
+    </ul>
+
+    <figure style="align: center;">
+        <img src="./imagenes/gimp1.png">
+        <figcaption>Imagen de mapa de bits aumentada para que se vean los puntos (pixeles)</figcaption>
+    </figure>
+
+  </div>
+
+  <div style="border:1px solid #ddd; border-radius:8px; padding:12px;">
+    <div style="background-color:#cce5ff; color:#004085; font-weight:bold; padding:6px; border-radius:6px;">
+      Imágenes vectoriales
+    </div>
+    <ul>
+      <li>Las imágenes están formadas por la composición de <b>objetos matemáticos</b> (líneas y formas).</li>
+      <li>Cada uno de estos vectores tiene sus propias características (tamaño, tipo de línea, color, relleno...) especificadas en su definición.</li>
+      <li>No pierden calidad al cambiar de tamaño.</li>
+      <li>Ocupan <b>menos espacio</b> que las imágenes bitmap.</li>
+      <li>Ideales para <b>logotipos, iconos y dibujos</b>.</li>
+      <li>Formato más común: <b>SVG</b>.</li>
+    </ul>
+    <figure style="align: center;">
+        <img src="./imagenes/coche1.png">
+        <figcaption>Imagen vectorial compuesta por objetos individuales</figcaption>
+    </figure>
+  </div>
+</div>
+
+<h2 id="formatos-de-imagenes">Formatos de imágenes<a class="headerlink" href="#formatos-de-imagenes" title="Permanent link">&para;</a></h2>
+<p>Dentro de cada tipo de imagen hay una gran cantidad de formatos diferentes. El formato determina cómo se guarda la imagen, su calidad y su tamaño. Además, solo podrá ser abierto y manipulado por aquellas aplicaciones que estén diseñadas para trabajar con ese formato.</p>
+<p>En la siguiente tabla se muestran los formatos de archivos de imagen de mapa de bits:</p>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>Descripción</th>
+<th>Compresión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BMP</strong></td>
+<td>Mapa de bits. Usado por Windows (Paint).</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>GIF</strong></td>
+<td>Muy usado en la web, soporta animaciones, 256 colores.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>JPG / JPEG</strong></td>
+<td>Imagen digital, alta compresión, admite 16 millones de colores.</td>
+<td>Con pérdidas ajustables</td>
+</tr>
+<tr>
+<td><strong>TIF / TIFF</strong></td>
+<td>Alta calidad, muy usado en fotografía.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>PNG</strong></td>
+<td>Sustituto de GIF, mejor calidad, menor tamaño.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>XCF</strong></td>
+<td>Formato propio de <strong>GIMP</strong>, soporta capas y transparencias.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>PSD</strong></td>
+<td>Formato de Photoshop, soporte completo de capas.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>WebP</strong></td>
+<td>Formato de Google, para la web y las aplicaciones móviles.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>SVG</strong></td>
+<td>Formato deb <strong>Inkscape</strong>.</td>
+<td>Sin pérdidas</td>
+</tr>
+<tr>
+<td><strong>PDF</strong></td>
+<td>Formato de almacenamiento de archivos universal de tipo compuesto (imagen vectorial, mapa de bits y texto).</td>
+<td>Sin pérdidas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="calidad-de-una-imagen">Calidad de una imagen<a class="headerlink" href="#calidad-de-una-imagen" title="Permanent link">&para;</a></h2>
+<p>La calidad de una imagen digital depende <strong>del número de puntos que la componen y del número de colores que se emplean</strong>. Cuanto mayor sea el número de puntos y el de colores, más calidad tendrá la imagen.</p>
+<p>A mayor calidad, mayor tamaño del archivo. La compresión reduce el tamaño, pero puede provocar pérdida de calidad (especialmente en JPG).</p>
+<figure style="align: center;">
+    <img src="./imagenes/gimp2.png">
+</figure>
+
+<p>A continuación, se presenta una tabla con los programas  de edición gráfica y visores más populares: </p>
+<table>
+<thead>
+<tr>
+<th>Programa</th>
+<th>Icono</th>
+<th>Aplicación</th>
+<th>Descripción</th>
+<th>Software libre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GIMP</strong></td>
+<td><img alt="icono" src="imagenes/icono_gimp.png" width="55" /></td>
+<td>Edición de imágenes digitales</td>
+<td>Muy potente, en continuo desarrollo.</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td><strong>PhotoScape</strong></td>
+<td><img alt="icono" src="imagenes/icono_PhotoScape.png" width="55" /></td>
+<td>Edición y visor de imágenes</td>
+<td>También visor de imágenes.</td>
+<td>Gratuito</td>
+</tr>
+<tr>
+<td><strong>Photoshop</strong></td>
+<td><img alt="icono" src="imagenes/icono_Photoshop.png" width="55" /></td>
+<td>Edición de imágenes digitales</td>
+<td>Muy potente y usado profesionalmente.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Paint Shop Pro</strong></td>
+<td><img alt="icono" src="imagenes/icono_pain.png" width="55" /></td>
+<td>Edición de imágenes digitales</td>
+<td>De la familia Corel.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>XnView</strong></td>
+<td><img alt="icono" src="imagenes/icono_XnView.png" width="55" /></td>
+<td>Visualización de imágenes</td>
+<td>Organizador de fotos.</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td><strong>Pixlr</strong></td>
+<td><img alt="icono" src="imagenes/icono_Pixlr.png" width="55" /></td>
+<td>Edición de imágenes digitales online</td>
+<td>Editor completo, tres variantes, sin registro.</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>PicMonkey</strong></td>
+<td><img alt="icono" src="imagenes/icono_PicMonkey.png" width="55" /></td>
+<td>Edición de imágenes digitales online</td>
+<td>Intuitivo, mejora imágenes, collages y marcos, sin registro.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tratamiento-de-imagenes-con-gimp">Tratamiento de imágenes con GIMP<a class="headerlink" href="#tratamiento-de-imagenes-con-gimp" title="Permanent link">&para;</a></h2>
+<p>GIMP es un programa gratuito que permite procesar dibujos vectoriales y fotografías digitales. Su nombre viene de <em>GNU Image Manipulation Program</em> (Programa de manipulación de imágenes de GNU).</p>
+<h2 id="primeros-pasos-con-gimp">Primeros pasos con Gimp<a class="headerlink" href="#primeros-pasos-con-gimp" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Abrir Gimp</strong></p>
+<p>Podemos abrir la aplicación desde el menú <strong>Aplicaciones &gt; Gráficos &gt; Editor de imágenes GIMP</strong>.</p>
+<p>También podemos escribir la palabra "Gimp" en el botón de inicio de LLiurex y pulsar en el icono de la aplicación.</p>
+<p>Después,<strong>Archivo &gt; Abrir &gt; abrir la ubicación y seleccionar el archivo</strong>.
+Como alternativa, podemos pulsar sobre el archivo con el botón derecho del ratón y seleccionar Abrir con &gt; GIMP.</p>
+</li>
+<li>
+<p><strong>Ventana principal</strong></p>
+<p>Se abrirá la ventana de Gimp con el siguiente aspecto.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp3.png">
+    <figcaption>Partes de la ventana principal de Gimp</figcaption>
+</figure></p>
+<p>Las partes principales de la ventana principal, son las siguientes:</p>
+<ul>
+<li>La <strong>barra de menú de imagen</strong>. Todas las funcionalidades posibles de GIMP se encuentran en esta barra de menús, incluyendo las de la Caja de herramientas, cualquier operación sobre una capa, el lienzo, filtros, configurar la interfaz (menú Ventanas), y mucho más.</li>
+<li><strong>Ventana de imagen</strong>. Es sencillamente el área de trabajo. Donde estará el lienzo y todas las capas.</li>
+<li>
+<p><strong>Diálogo empotrable Capas (activo)</strong>. Es un panel de control para capas. Permite organizarlas, ordenarlas, ajustar el modo en que se superponen, su opacidad, … y mucho más. En el resto de pestañas: Rutas, Canales, Histórico de deshacer y editor de degradados. </p>
+<p>Las capas son como distintas hojas que se van superponiendo unas encima de otras, en las que se puede dibujar o aplicar filtros y efectos; al visualizarlas todas a la vez, se obtiene la imagen final.</p>
+<ul>
+<li>Inicialmente, las imágenes tienen una sola capa, denominada <strong>Fondo</strong>, pero, según se vayan realizando determinadas acciones, irán apareciendo nuevas capas.</li>
+<li>Las acciones con capas se pueden realizar desde la ventana <strong>Capas</strong>. Así, para activar una y poder trabajar con su contenido, bastará con hacer clic sobre su nombre. Para cambiar el nombre de una capa, habrá que hacer doble clic sobre su nombre y escribir el nuevo</li>
+<li>La capa activa se muestra resaltada en azul y será visible si se ve un icono de un ojo , pinchando sobre este icono desaparece, y si se vuelve a pulsar se hará de nuevo visible.</li>
+</ul>
+</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp4.png">
+    <figcaption>Ejemplo del lienzo y las capas en GIMP</figcaption>
+</figure></p>
+<ul>
+<li><strong>Caja de herramientas</strong>. El área de herramientas más importante de GIMP. Contiene la mayoría de herramientas que vamos a usar: mover, selección, recorte, escalar, rotar, voltear, rellenar, pinceles, clonado, texto, etc. etc.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp5.png">
+    <figcaption>Herramientas de selección de GIMP</figcaption>
+</figure></p>
+<ul>
+<li><strong>Diálogo empotrable Degradados (activo)</strong>. En el resto de pestañas: Pinceles y Patrones.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp7.png">
+    <figcaption>Pinceles y Patrones</figcaption>
+</figure></p>
+<ul>
+<li>
+<p><strong>Diálogo empotrable Opciones de herramienta</strong>. Permite configurar la herramienta seleccionada. Las opciones de herramienta cambian de acuerdo a la herramienta que tenemos seleccionada en la Caja de Herramientas.</p>
+<ul>
+<li>Esta configuración inicial de GIMP puede simplificarse cerrando la ventana Capas, Canales, Rutas y Deshacer. Para recuperar la visualización de una ventana no principal selecciona Ventanas &gt; Diálogos empotrables &gt; ... </li>
+<li>Para restaurar estos paneles a la disposición inicial selecciona Editar &gt; Preferencias &gt; Gestión de la ventana y pulsar en el botón Restaurar las posiciones de ventana guardadas a los valores predeterminados. Clic en Aceptar y luego en Reiniciar. Si se cierra GIMP y se vuelve a abrir se mostrarán los paneles por defecto.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Abrir una imagen</strong></p>
+<p>Para ello descarga en el Escritorio la imagen que tienes en los apuntes o hayas encontrado en internet en formato <code>.jpg</code>.</p>
+<p>Para abrirla nos vamos al menú <strong>Archivo &gt; Abrir</strong>, localizamos la imagen y pulsamos en <strong>Abrir</strong>.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/piramide.png">
+    <figcaption>Ejemplo abrir imagen en gimp</figcaption>
+</figure></p>
+<p>Elementos de interés:</p>
+<ul>
+<li>La imagen aparece con unas reglas horizontales y verticales (flecha roja) cuya escala está en píxeles (podemos cambiar a centímetros, milímetros o cualquier otra medida desde el selector indicado por la flecha celeste).</li>
+<li>Se ha activado por defecto la herramienta Recortar, como podemos ver en el círculo amarillo. Por lo que si ahora pinchamos y arrastramos con el ratón, estaríamos recortando la imagen.</li>
+<li>También podemos ver que se ha añadido una primera capa (indicada por la flecha naranja).</li>
+<li>Podemos acercarnos o alejarnos de la imagen usando el selector de porcentaje que indica la flecha rosa.
+En la zona rodeada de morado, tenemos información de cómo funciona la herramienta actualmente seleccionada.</li>
+<li>Por último los números que están rodeados de verde son las coordenadas del puntero del ratón. El primer número representa el desplazamiento sobre el eje horizontal, y el segundo número el desplazamiento sobre el eje vertical, teniendo en cuenta que se empieza a contar desde la esquina superior izquierda de la imagen (posición 0,0). Cuanto más avance el ratón desde ahí hacia la derecha, más grande será el primer número. Cuando más avance el ratón desde ahí hacia abajo, más grande será el segundo número.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rehacer o deshacer una acción</strong></p>
+<p>Para <strong>deshacer</strong> una acción: <strong>Editar &gt; Deshacer</strong> mientras que para <strong>rehacer</strong> una acción anteriormente deshecha: Editar &gt; Rehacer</p>
+</li>
+<li>
+<p><strong>Escalar una imagen</strong></p>
+<p>Escalar una imagen consiste en aumentar o reducir su tamaño físico. Para ello se cambia el número de píxeles que contiene y se redimensiona el lienzo del dibujo.</p>
+</li>
+<li>
+<p><strong>Guardar la composición GIMP</strong></p>
+<p>Para guardar la composición con la que estamos trabajando en Gimp debemos ir a Archivo &gt; Guardar &gt; elegir nombre y la ubicación en el equipo local</p>
+<p>Este archivo con extensión <code>.xcf</code> solo puede ser abierto en equipos que tengan GIMP instalado.</p>
+</li>
+<li>
+<p><strong>Exportar a un formato de imagen convencional</strong></p>
+<p>Para guardar una imagen, en un formato convencional de imagen (JPG, PNG, …) con GIMP, debemos utilizar la opción de menú Exportar, que realiza una acción completamente diferente de la opción de menú Guardar</p>
+</li>
+</ol>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X61yReOfU0k?si=gDVOCUs931tJJ7AL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ <figcaption> Vídeo resumen como usar Gimp. (Capas hasta minuto 8)</figcaption>
+</div>
+
+<details class="question" open="open">
+<summary>Actividad</summary>
+<h4 id="aa51-escalar-una-imagen-modificarla-y-exportarla">📝 <strong>AA5.1</strong> Escalar una imagen, modificarla y exportarla<a class="headerlink" href="#aa51-escalar-una-imagen-modificarla-y-exportarla" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Crear, integrar y editar contenidos digitales con sentido estético de forma individual o colectiva, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, y respetando los derechos de autoría.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Abre la imagen <a href="resources/p01.jpg">p01</a> en <strong>Gimp</strong>.  </p>
+<ul>
+<li>Abre GIMP.</li>
+<li>Ve a Archivo &gt; Abrir.</li>
+<li>Busca y selecciona la imagen p01.jpg.</li>
+<li>Pulsa Abrir.</li>
+</ul>
+</li>
+<li>
+<p>Con la herramienta de texto añade tu nombre y apellido a la imagen.</p>
+<ul>
+<li>Selecciona la Herramienta de texto (icono de la A).</li>
+<li>Haz clic sobre la imagen donde quieras escribir.</li>
+<li>Escribe tu nombre y apellido.</li>
+<li>En las Opciones de herramienta:</li>
+<li>Cambia el tipo de letra.</li>
+<li>Ajusta el tamaño.</li>
+<li>Elige el color del texto.</li>
+</ul>
+<p>👉 El texto se crea en una capa nueva, lo que permite moverlo o modificarlo sin afectar a la imagen.</p>
+</li>
+<li>
+<p>Escala la imagen al 45%</p>
+<ul>
+<li>Ve al menú Imagen &gt; Escalar la imagen.</li>
+<li>En el menú desplegable a la derecha de Anchura y Altura, selecciona Porcentaje.</li>
+<li>Escribe 45 % en el campo Anchura.</li>
+<li>Comprueba que el valor de Altura se ajusta automáticamente.</li>
+<li>Pulsa Escalar.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/gimp6.png" width="455">
+    <figcaption>Escalar imagen</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Exporta la imagen formato <strong>pdf</strong>.</p>
+<ul>
+<li>Ve a Archivo &gt; Exportar como.</li>
+<li>Escribe el nombre del archivo y añade la extensión .pdf.</li>
+<li>Elige la carpeta donde guardar el archivo.</li>
+<li>Pulsa Exportar.</li>
+<li>Acepta las opciones por defecto y confirma.</li>
+</ul>
+</li>
+</ol>
+</details>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Guía <a href="https://docs.gimp.org/es/">Gimp 2.10</a></li>
+</ul>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+<!-- pendientte -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../04_Web/7_hosting.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.5- Publicación de páginas web">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                4.5- Publicación de páginas web
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="4_Gimp_II.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 5.2- Operaciones básicas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                5.2- Operaciones básicas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
